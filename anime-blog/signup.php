@@ -72,7 +72,7 @@ $mysqli->close();
             <section class="sign">
                 <div class="sign__content _container-signlog">
                     <div class="content__form2">
-                        <form class="js-form" method="post" action="" novalidate>
+                        <form action="" method="post" class="js-form" novalidate>
                             <div class="form2__item">
                                 <label for="" class="form__label">Name</label>
                                 <input type="text" name="name" class="name" placeholder="Enter your Name"/>
