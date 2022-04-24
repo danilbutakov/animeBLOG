@@ -51,7 +51,8 @@ $mysqli->close();
         crossorigin="anonymous">
     </script>
     <script src="slick/slick.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/header.js"></script>
 </head>
 <body>
     <div class="wrapper">
