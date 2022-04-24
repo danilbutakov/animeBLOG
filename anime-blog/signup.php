@@ -85,18 +85,6 @@ $mysqli->close();
                                 <label for="" class="form__label password">Password</label>
                                 <input type="password" name="password" class="password" placeholder="Enter your Password" />
                         <form action="" method="post" class="js-form" novalidate>
-                            <div class="form2__item">
-                                <label for="" class="form__label">Name</label>
-                                <input type="text" name="name" class="form__input js-input" placeholder="Enter your Name"/>
-                            </div>
-                            <div class="form2__item">
-                                <label for="" class="form__label">Email</label>
-                                <input type="email" name="email" class="form__input js-input js-input-email" placeholder="Enter your Email" />
-                            </div>
-                            <div class="form2__item">
-                                <label for="" class="form__label password">Password</label>
-                                <input type="password" name="password" class="form__input js-input js-input-password" placeholder="Enter your Password" />
-                            </div>
                             <div class="form2__button">
                                 <button type="submit" name="submit" class="button__send">Sign up</button>
                             </div>

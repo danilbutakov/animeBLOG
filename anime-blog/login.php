@@ -79,14 +79,12 @@ $mysqli->close();
                             </div>
                             <div class="form2__item">
                                 <label for="" class="form__label password">Password</label>
-                                <input type="password" name="password" class="password" placeholder="Enter your Password" />
                                 <input type="password" name="password" class="form__input js-input js-input-password" placeholder="Enter your Password" />
                             </div>
                             <div class="form2__button">
                                 <button type="submit" name="submit" class="button__send">Login</button>
                             </div>
                         </form>
-                        <div id="results"></div>
                     </div>
                 </div>
             </section>
