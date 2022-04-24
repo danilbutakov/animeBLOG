@@ -52,7 +52,6 @@ $mysqli->close();
     </script>
     <script src="slick/slick.min.js"></script>
     <script src="js/slick.js"></script>
-    <script src="js/header.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -678,5 +677,6 @@ $mysqli->close();
         </footer>
     </div>
 </body>
+<script src="js/header.js"></script>
 <script src="js/formIndex.js"></script>
 </html>

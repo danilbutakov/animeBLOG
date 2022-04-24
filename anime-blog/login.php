@@ -43,7 +43,6 @@ $mysqli->close();
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/login.css">
-    <script src="js/header.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -91,5 +90,6 @@ $mysqli->close();
         </main>
     </div>
 </body>
+<script src="js/header.js"></script>
 <script src="js/form.js"></script>
 </html>
