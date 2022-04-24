@@ -52,11 +52,10 @@ $mysqli->close();
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+    <header class="header">
             <div class="header__container _container">
                 <div class="header__body">
                     <a href="index.php" class="header__logo">
-                    <a href="index.html" class="header__logo">
                         <img src="img/header/Logo.png" alt="Logo">
                     </a>
                     <div class="header__burger">
@@ -66,8 +65,8 @@ $mysqli->close();
                         <ul class="header__list">
                             <li><a href="index.php" class="header__link">Home</a></li>
                             <li><a href="" class="header__link">Connect</a></li>
-                            <li><a href="signup.php" class="header__link sign-up">Sign up</a></li>
-                            <li><a href="login.php" class="header__link login _active">Login</a></li>
+                            <li><a href="signup.php" class="header__link sign-up _active">Sign up</a></li>
+                            <li><a href="login.php" class="header__link login">Login</a></li>
                         </ul>
                     </nav>
                 </div>
