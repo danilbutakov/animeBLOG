@@ -31,4 +31,4 @@ let form = document.querySelector('.js-form'),
                 inputEmail.classList.remove('error');
             }    
             
-}
+};

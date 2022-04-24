@@ -72,7 +72,6 @@ $mysqli->close();
             <section class="sign">
                 <div class="sign__content _container-signlog">
                     <div class="content__form2">
-<<<<<<< HEAD
                         <form id="form2" method="post" action="signup.php">
                             <div class="form2__item">
                                 <label for="" class="form__label">Name</label>
@@ -85,7 +84,6 @@ $mysqli->close();
                             <div class="form2__item">
                                 <label for="" class="form__label password">Password</label>
                                 <input type="password" name="password" class="password" placeholder="Enter your Password" />
-=======
                         <form action="" method="post" class="js-form" novalidate>
                             <div class="form2__item">
                                 <label for="" class="form__label">Name</label>
@@ -98,7 +96,6 @@ $mysqli->close();
                             <div class="form2__item">
                                 <label for="" class="form__label password">Password</label>
                                 <input type="password" name="password" class="form__input js-input js-input-password" placeholder="Enter your Password" />
->>>>>>> php
                             </div>
                             <div class="form2__button">
                                 <button type="submit" name="submit" class="button__send">Sign up</button>

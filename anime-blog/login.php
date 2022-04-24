@@ -50,11 +50,8 @@ $mysqli->close();
         <header class="header">
             <div class="header__container _container">
                 <div class="header__body">
-<<<<<<< HEAD
                     <a href="index.php" class="header__logo">
-=======
                     <a href="index.html" class="header__logo">
->>>>>>> php
                         <img src="img/header/Logo.png" alt="Logo">
                     </a>
                     <div class="header__burger">
@@ -75,22 +72,15 @@ $mysqli->close();
             <section class="sign">
                 <div class="sign__content _container-signlog">
                     <div class="content__form2">
-<<<<<<< HEAD
-                        <form id="form2" method="post" action="login.php">
-=======
                         <form action="" method="post" class="js-form" novalidate>
->>>>>>> php
                             <div class="form2__item">
                                 <label for="" class="form__label">Email</label>
                                 <input type="email" name="email" class="form__input js-input js-input-email" placeholder="Enter your Email" />
                             </div>
                             <div class="form2__item">
                                 <label for="" class="form__label password">Password</label>
-<<<<<<< HEAD
                                 <input type="password" name="password" class="password" placeholder="Enter your Password" />
-=======
                                 <input type="password" name="password" class="form__input js-input js-input-password" placeholder="Enter your Password" />
->>>>>>> php
                             </div>
                             <div class="form2__button">
                                 <button type="submit" name="submit" class="button__send">Login</button>

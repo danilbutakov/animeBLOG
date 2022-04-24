@@ -44,4 +44,4 @@ let form = document.querySelector('.js-form'),
             } else {
                 inputPassword.classList.remove('error');
             }
-}
+};

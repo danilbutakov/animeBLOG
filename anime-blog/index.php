@@ -667,15 +667,12 @@ $mysqli->close();
                         <p class="inf__par">Gates is a blog that focuses on Japanese art and anime. <br> They feature information on Otaku conventions and other <br> anime topics. Hear from famous anime filmmakers and <br> artists as well as plenty of news about the art of cartoon <br> creation in the Japanese culture.</p>
                     </div>
                     <div class="footer__form form">
-<<<<<<< HEAD
                         <form action="index.php" method="post" class="form__body" id="form">
                             <button class="form__button" type="submit">SUBSCRIBE</button>
                             <input id="formEmail" type="text" name="email__sub" class="form__input _req _email" placeholder="Enter your email">
-=======
                         <form action="" method="post" class="js-form" novalidate>
                             <button class="form__button" type="submit">SUBSCRIBE</button>
                             <input type="email" name="email__sub" class="form__input js-input js-input-email" placeholder="Enter your email">
->>>>>>> php
                             <button class="form__ico" type="submit"><img src="img/ico/Group 4.png" alt=""></button> 
                         </form>
                     </div>
