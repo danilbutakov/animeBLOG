@@ -23,9 +23,9 @@ if($query != '') {
 
 
 if(mysqli_query($mysqli, $query)){
-    echo "Записи успешно добавлены.";
+    // echo "Записи успешно добавлены.";
 } else{
-    echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
+    // echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
 }
 
 

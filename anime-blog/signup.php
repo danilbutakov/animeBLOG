@@ -25,9 +25,9 @@ $query = "INSERT INTO signup VALUES(null, '$name', '$email', '$password')";
 
 
 if(mysqli_query($mysqli, $query)){
-echo "Записи успешно добавлены.";
+// echo "Записи успешно добавлены.";
 } else{
-echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
+// echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
 }
 
 
