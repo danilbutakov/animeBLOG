@@ -82,17 +82,14 @@ $mysqli->close();
                         <div class="content__title">Welcome to <br> Gates</div>
                         <div class="content__text">Get the latest news on your favourite mangas, anime and <br> manhwa around the world!</div>
                         <div class="content__form form">
-<<<<<<< HEAD
                             <form action="index.php" class="form__body" method="post">
                                 <button class="form__button" type="submit">SUBSCRIBE</button>
                                 <input type="text" name="email__sub" class="form__input" placeholder="Enter your email">
                                 <button class="form__ico" type="submit"><img src="img/ico/Group 4.png" alt=""></button> 
-=======
                             <form action="" method="post" class="js-form" novalidate>
                                 <button class="form__button" type="submit" name="submit">SUBSCRIBE</button>
                                 <input type="email" name="email__sub" class="form__input js-input js-input-email" placeholder="Enter your email">
                                 <button class="form__ico" type="submit" name="submit"><img src="img/ico/Group 4.png" alt=""></button> 
->>>>>>> php
                             </form>
                         </div>
                     </div>
