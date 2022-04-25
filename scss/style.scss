@@ -91,16 +91,7 @@ $md7: 983.98px;
         }
     }
 
-    &__input {
-        background-color: #FAFAFA;
-        opacity: 0.8;
-        @media (min-width: 768px) {
-            margin: 0 20% 0 0;
-        }
-        &.error {
-            box-shadow: 0 0 15px red;
-        }
-    }
+    
 
     &__ico {
         background-color: #FAFAFA;
@@ -116,4 +107,46 @@ $md7: 983.98px;
         }
     }
 }
+
+.js-input {
+    background-color: #FAFAFA;
+    opacity: 0.8;
+    @media (min-width: 768px) {
+        margin: 0 20% 0 0;
+    }
+    &.error {
+        box-shadow: 0 0 15px red;
+    }
+}
+.js-input1 {
+    background-color: #FAFAFA;
+    opacity: 0.8;
+    @media (min-width: 768px) {
+        margin: 0 20% 0 0;
+    }
+    &.error {
+        box-shadow: 0 0 15px red;
+    }
+}
+.js-input2 {
+    background-color: #FAFAFA;
+    opacity: 0.8;
+    @media (min-width: 768px) {
+        margin: 0 20% 0 0;
+    }
+    &.error {
+        box-shadow: 0 0 15px red;
+    }
+}
+.js-input3 {
+    background-color: #FAFAFA;
+    opacity: 0.8;
+    @media (min-width: 768px) {
+        margin: 0 20% 0 0;
+    }
+    &.error {
+        box-shadow: 0 0 15px red;
+    }
+}
+
 

@@ -5,7 +5,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 3;
     margin: 0 0 20px 0;
     background-color:rgba(255, 255, 255, 1);
     &::before {
@@ -140,6 +140,9 @@
     font-weight: 500;
     background: linear-gradient(95.32deg, #313131 0%, #000000 101.64%);
     border-radius: 3px;
+    &:hover {
+        transition: all 1s ease 0s;
+    }
 }
 
 .login {

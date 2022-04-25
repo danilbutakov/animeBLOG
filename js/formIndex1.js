@@ -1,15 +1,21 @@
-let form = document.querySelector('.js-form'),
-    formInputs = document.querySelectorAll('.js-input'),
-    inputEmail = document.querySelector('.js-input-email');
+let form = document.querySelector('.js-form1'),
+    formInputs = document.querySelectorAll('.js-input1'),
+    inputEmail = document.querySelector('.js-input-email1'),
+    inputPassword = document.querySelector('.js-input-password1');
 
     function validateEmail(email) {
         let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }   
 
+    function validatePassword(password) {
+        let re2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^\w\s]).{6,}/;
+        return re2.test(String(password));
+    }
 
     form.onsubmit = function () {
         let emailVal = inputEmail.value,
+            passwordVal = inputPassword.value,
             emptyInputs = Array.from(formInputs).filter(input => input.value === '');
 
             formInputs.forEach(function (input) {
@@ -31,4 +37,11 @@ let form = document.querySelector('.js-form'),
                 inputEmail.classList.remove('error');
             }    
             
-}
+            if(!validatePassword(passwordVal)) {
+                console.log('password not valid');
+                inputPassword.classList.add('error');
+                return false;
+            } else {
+                inputPassword.classList.remove('error');
+            }
+};

@@ -1,7 +1,7 @@
-let form = document.querySelector('.js-form'),
-    formInputs = document.querySelectorAll('.js-input'),
-    inputEmail = document.querySelector('.js-input-email'),
-    inputPassword = document.querySelector('.js-input-password');
+let form4 = document.querySelector('.js-form'),
+    formInputs4 = document.querySelectorAll('.js-input'),
+    inputEmail4 = document.querySelector('.js-input-email'),
+    inputPassword4 = document.querySelector('.js-input-password');
 
     function validateEmail(email) {
         let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -13,12 +13,12 @@ let form = document.querySelector('.js-form'),
         return re2.test(String(password));
     }
 
-    form.onsubmit = function () {
-        let emailVal = inputEmail.value,
-            passwordVal = inputPassword.value,
-            emptyInputs = Array.from(formInputs).filter(input => input.value === '');
+    form4.onsubmit = function () {
+        let emailVal = inputEmail4.value,
+            passwordVal = inputPassword4.value,
+            emptyInputs = Array.from(formInputs4).filter(input => input.value === '');
 
-            formInputs.forEach(function (input) {
+            formInputs4.forEach(function (input) {
                 if (input.value === '') {
                     input.classList.add('error');
                 } else {
@@ -31,17 +31,17 @@ let form = document.querySelector('.js-form'),
 
             if(!validateEmail(emailVal)) {
                 console.log('email not valid');
-                inputEmail.classList.add('error');
+                inputEmail4.classList.add('error');
                 return false;
             } else {
-                inputEmail.classList.remove('error');
+                inputEmail4.classList.remove('error');
             }    
             
             if(!validatePassword(passwordVal)) {
                 console.log('password not valid');
-                inputPassword.classList.add('error');
+                inputPassword4.classList.add('error');
                 return false;
             } else {
-                inputPassword.classList.remove('error');
+                inputPassword4.classList.remove('error');
             }
-}
+};
