@@ -1,47 +1,59 @@
 @import "header.scss";
 @import "footer.scss";
+@import "style.css";
 
 body.lock {
     overflow: hidden;
 }
 
-
-.page {
-    background-image: url(../img/home/bg1.png);
-    max-height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.popup {
     width: 100%;
-    padding: 340px 0 270px 0;
-}
-
-.sign {
-
-    &__content {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    z-index: 5;
+    transform: translateY(-44.5%) scale(0);
+    transition: all 0.5s ease 0s;
+    &._active {
+        transform: translateY(0%) scale(100%);
+        background-color: rgba(0, 0, 0, .8);
     }
-}
+    &__container {
+        max-width: $maxWidthContainerSignLog;
+        margin: 50px auto;
+    }
 
-.content {
-
-    &__form2 {
+    &__body {
+        position: relative;
         
     }
 }
+.js-form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .form2 {
-
+    
     &__item {
         margin: 0 0 30px 0;
         background: #FAFAFA;
         opacity: 0.8;
-        padding: 20px 10px 20px 10px;
-        
+        padding: 20px 10px 20px 15px;
+        @media (max-width: $md3) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px 10px 20px 15px;
+            margin: 0 15px 0 15px;
+        }
     }
 
     &__button {
         display: flex;
         justify-content: center;
-        
     }
 }
 .form {
@@ -50,36 +62,45 @@ body.lock {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
-        font-size: 9px;
-        line-height: 9px;
-        letter-spacing: 1px;
+        font-size: 15px;
+        line-height: 15px;
         color: #FFFFFF;
         background: linear-gradient(95.32deg, #313131 0%, #000000 101.64%);
-        padding: 10px 30px;
+        padding: 8px 30px;
         margin: 0 25px 30px 0;
+        @media (max-width: $md3) {
+            margin: 0 0 30px 0;
+        }
         &.password {
-            padding: 10px 20px;
+            padding: 8px 15px;
+        }
+        
+    }
+
+    &__input2 {
+        width: 50%;
+        @media (max-width: $md3) {
+            width: 100%;
         }
     }
 }
-.name {
-    width: 70%;
-    @media (max-width: $md3) {
-        width: 50%;
-    }
+.js-input {
+    
 }
-.email {
-    width: 70%;
-    @media (max-width: $md3) {
-        width: 50%;
-    }
+.js-input-email {
 }
-.password {
-    width: 70%;
-    @media (max-width: $md3) {
-        width: 50%;
-    }
+.js-input-password {
 }
+
+.close__popup {
+    color: #FAFAFA;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
 .button {
 
     &__send {
@@ -98,3 +119,4 @@ body.lock {
         margin: 30px 0 0 0;
     }
 }
+
