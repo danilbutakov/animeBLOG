@@ -1,34 +1,8 @@
 <?php
 
-$mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
-
-    if(mysqli_connect_errno()) {
-        printf('Соединение не установлено', mysqli_error());
-        exit();
-    }
-
-
-$mysqli->set_charset('utf8');
-
-
-
-$query = $mysqli->query('SELECT * FROM subscribe');
-
-//$emailSub = mysqli_real_escape_string($mysqli, $_REQUEST['email__sub']);
-$emailSub = $_REQUEST['email'];
-if($query != '') {
-    $query = "INSERT INTO subscribe VALUES (null, '$emailSub')";
-}
-
-
-if(mysqli_query($mysqli, $query)){
-    // echo "Записи успешно добавлены.";
-} else{
-    // echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
-}
-
-
-$mysqli->close();
+    include 'php/mysqlauthentication.php';
+    include 'php/registration.php';
+    include 'php/subscribe.php';
 
 ?>
 <!DOCTYPE html>
@@ -84,7 +58,7 @@ $mysqli->close();
                         <div class="content__form form">
                             <form action="" method="post" class="js-form2" novalidate>
                                 <button class="form__button" type="submit" name="submit">SUBSCRIBE</button>
-                                <input type="email" name="email" class="form__input js-input2 js-input-email2" placeholder="Enter your email">
+                                <input type="email" name="email__sub" class="form__input js-input2 js-input-email2" placeholder="Enter your email">
                                 <button class="form__ico" type="submit" name="submit"><img src="img/ico/Group 4.png" alt=""></button> 
                             </form>
                         </div>
@@ -114,7 +88,7 @@ $mysqli->close();
                             </div>
                             <div class="form2__item">
                                 <label for="" class="form__label password">Password</label>
-                                <input type="password" name="password" class="form__input2 js-input1 js-input-password1" placeholder="Enter your Password" />
+                                <input type="password" name="pass" class="form__input2 js-input1 js-input-password1" placeholder="Enter your Password" />
                             </div>
                             <div class="form2__button">
                                 <button type="submit" name="submit" class="button__send">Sign up</button>
