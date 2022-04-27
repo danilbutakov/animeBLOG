@@ -63,7 +63,8 @@
                                 <button type="submit" name="submit" class="button__send">Login</button>
                             </div>
                         </form>
-                        <div id="results"></div>
+                        <div class="results" id="results"></div>
+                        <button class="button__send">Close</button>
                     </div>
                 </div>
             </section>

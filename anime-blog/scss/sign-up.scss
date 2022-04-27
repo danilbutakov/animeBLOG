@@ -98,12 +98,20 @@ body.lock {
         }
     }
 }
-.js-input {
-    
+
+.results {
+    @media(max-width: $md3) {
+        display: none;
+    }
 }
-.js-input-email {
-}
-.js-input-password {
+
+.button__send {
+    @media(min-width: $md3) {
+        display: none;
+    }
+    @media(max-width: $md3) {
+        display: block;
+    }
 }
 
 .close__popup {
