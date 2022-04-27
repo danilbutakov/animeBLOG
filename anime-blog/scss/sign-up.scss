@@ -118,12 +118,7 @@ body.lock {
 
 
 .button__send {
-    @media(max-width: $md3) {
-        display: none;
-    }
-    @media(min-width: $md3) {
-        display: block;
-    }
+    
 }
 
 .close__popup {
