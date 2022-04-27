@@ -731,6 +731,38 @@ body.lock {
   }
 }
 
+button.button__send1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  background: linear-gradient(95.32deg, #313131 0%, #000000 101.64%);
+  border: 2px solid #FFFFFF;
+  border-radius: 3px;
+  padding: 5px 15px;
+  margin: 30px 0 0 0;
+}
+
+button#close__pop_up_1.close__pop_up {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  background: linear-gradient(95.32deg, #313131 0%, #000000 101.64%);
+  border: 2px solid #FFFFFF;
+  border-radius: 3px;
+  padding: 5px 15px;
+  margin: 30px 0 0 0;
+}
+
 .form__label {
   font-family: 'Poppins';
   font-style: normal;
