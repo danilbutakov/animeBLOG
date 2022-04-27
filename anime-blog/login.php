@@ -1,7 +1,7 @@
 <?php
 
-    include_once './php/authorization.php';
-    include_once './php/registration.php';
+    include_once '../php/authorization.php';
+    include_once '../php/registration.php';
 
 ?>
 <!DOCTYPE html>

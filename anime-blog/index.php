@@ -1,7 +1,7 @@
 <?php
 
-    include_once './php/registration.php';
-    include_once './php/subscribe.php';
+    include_once '../php/registration.php';
+    include_once '../php/subscribe.php';
 
 ?>
 <!DOCTYPE html>
