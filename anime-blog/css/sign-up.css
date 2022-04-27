@@ -713,7 +713,17 @@ body.lock {
 }
 .form2__button {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.form2__button_close {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .form2__button_close {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .form__label {

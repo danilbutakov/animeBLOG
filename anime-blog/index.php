@@ -92,7 +92,11 @@
                             </div>
                             <div class="form2__button">
                                 <button type="submit" name="submit" class="button__send">Sign up</button>
-                                <button class="button__send">Close</button>
+                                <button class="close__pop_up">Close</button>
+                            </div>
+                            <div class="form2__button_close">
+                                <button type="submit" name="submit" class="button__send">Sign up</button>
+                                <button class="close__pop_up">Close</button>
                             </div>
                         </form>
                         <div class="close__popup" id="close__pop_up">&#10006</div>
