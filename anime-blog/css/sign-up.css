@@ -733,7 +733,20 @@ body.lock {
   }
 }
 .form__label.password {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  color: #FFFFFF;
+  background: linear-gradient(95.32deg, #313131 0%, #000000 101.64%);
   padding: 8px 15px;
+  margin: 0 25px 30px 0;
+}
+@media (max-width: 767.98px) {
+  .form__label.password {
+    margin: 0 0 30px 0;
+  }
 }
 .form__input2 {
   width: 50%;
