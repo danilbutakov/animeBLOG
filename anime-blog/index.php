@@ -1,49 +1,7 @@
 <?php
 
-$mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
-
-if(mysqli_connect_errno()) {
-    printf('Соединение не установлено', mysqli_error());
-    exit();
-}
-
-
-$mysqli->set_charset('utf8');
-
-    $query = $mysqli->query("SELECT * FROM users");
-
-    $name = $_REQUEST['name'];
-    $email = $_REQUEST['email'];
-    $pass = $_REQUEST['pass'];
-    //$pass = md5($pass);
-
-    if($query != '') {
-        $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
-    }
-
-    if(mysqli_query($mysqli, $query)){
-        //echo "Записи успешно добавлены.";
-    } else{
-        echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
-    }
-
-
-    $query2 = $mysqli2->query('SELECT * FROM subscribe');
-
-    $emailSub = $_REQUEST['email__sub'];
-    if($query2 != '') {
-        $query2 = "INSERT INTO subscribe VALUES (null, '$emailSub')";
-    }
-
-
-    if(mysqli_query($mysqli2, $query2)){
-        //echo "Записи успешно добавлены.";
-    } else{
-        "ERROR: Не удалось выполнить $query2. " . mysqli_error($mysqli2);
-    }
-
-    $mysqli(close);
-    $mysqli2(close);
+    include_once './php/registration.php';
+    include_once './php/subscribe.php';
 
 ?>
 <!DOCTYPE html>
@@ -137,7 +95,7 @@ $mysqli->set_charset('utf8');
                             </div>
                             <div class="form2__button1_close1">
                                 <button type="submit" name="submit" class="button__send1">Sign up</button>
-                                <button class="close__pop_up" id="close__pop_up_1">Close</button>
+                                <button class="close__pop_up" id="close__pop_up1">Close</button>
                             </div>
                         </form>
                         <div class="close__popup" id="close__pop_up">&#10006</div>
