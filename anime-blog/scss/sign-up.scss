@@ -57,11 +57,9 @@ body.lock {
         
     }
     &__button1 {
-        display: none;
+        
         @media(max-width: $md3) {
-            display: flex;
-            justify-content: space-around;
-            display: block;
+            display: none;
         }
         &_close1 {
             display: none;

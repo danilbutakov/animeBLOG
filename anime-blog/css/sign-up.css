@@ -715,14 +715,9 @@ body.lock {
   display: flex;
   justify-content: center;
 }
-.form2__button1 {
-  display: none;
-}
 @media (max-width: 767.98px) {
   .form2__button1 {
-    display: flex;
-    justify-content: space-around;
-    display: block;
+    display: none;
   }
 }
 .form2__button1_close1 {
