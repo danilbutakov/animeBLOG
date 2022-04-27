@@ -1,6 +1,6 @@
 <?php
-    session_start();
-    require "./php/mysqlauthentication.php";
+
+    include_once "./php/mysqlauthentication.php";
 
     $email = $_REQUEST['email'];
     $pass = $_REQUEST['pass'];
@@ -20,5 +20,5 @@
     }
 
     $mysqli->close();
-    header('Location: /');
+
 ?>
