@@ -103,6 +103,9 @@ body.lock {
     @media(max-width: $md3) {
         display: none;
     }
+    @media(min-width: $md3) {
+        display: block;
+    }
 }
 
 .button__send {
