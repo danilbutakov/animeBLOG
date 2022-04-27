@@ -713,7 +713,7 @@ body.lock {
 }
 .form2__button {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .form__label {
