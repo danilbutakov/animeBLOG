@@ -6,11 +6,11 @@
     $pass = $_REQUEST['pass'];
     $pass = md5($pass);
 
-    $query = $mysqli->query("SELECT * FROM users WHERE email = '$email' AND pass = '$pass'")
+    $query = $mysqli->query("SELECT * FROM users WHERE 'email' = `$email` AND 'pass' = `$pass`")
 
     
     if($query != '') {
-        $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
+        $query = "INSERT INTO users VALUES (null, `$name`, `$email`, `$pass`)";
     }
 
     if(mysqli_query($mysqli, $query)){
