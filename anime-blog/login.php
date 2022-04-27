@@ -46,9 +46,6 @@
             </div>
         </header>
         <main class="page">
-            <?php
-                if($_COOKIE['user' == '']):
-            ?>
             <section class="sign">
                 <div class="sign__content _container-signlog">
                     <div class="content__form2">
@@ -94,9 +91,6 @@
                     </div>
                 </div>
             </section>
-            <?php else: ?>
-                <p>Привет, <?=$_COOKIE['user']?>. Чтобы выйти нажмите <a href="/exit.php">здесь.</a></p>
-            <?php endif:?>
         </main>
     </div>
     <script src="js/popup.js"></script>
