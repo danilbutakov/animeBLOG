@@ -99,14 +99,6 @@ body.lock {
     }
 }
 
-.results {
-    @media(max-width: $md3) {
-        display: none;
-    }
-    @media(min-width: $md3) {
-        display: block;
-    }
-}
 
 .button__send {
     @media(min-width: $md3) {
@@ -118,6 +110,12 @@ body.lock {
 }
 
 .close__popup {
+    @media(max-width: $md3) {
+        display: none;
+    }
+    @media(min-width: $md3) {
+        display: block;
+    }
     color: #FAFAFA;
     position: absolute;
     top: -30px;
