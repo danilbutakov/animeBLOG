@@ -63,7 +63,6 @@
                                 <button type="submit" name="submit" class="button__send">Login</button>
                             </div>
                         </form>
-                        <div class="results" id="results"></div>
                     </div>
                 </div>
             </section>
