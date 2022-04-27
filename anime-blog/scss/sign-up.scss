@@ -57,7 +57,7 @@ body.lock {
         
     }
     &__button1 {
-        
+        text-align: center;
         @media(max-width: $md3) {
             display: none;
         }
