@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli('localhost', 'root', 'admin', 'anime-blog');
+$mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
 
     if(mysqli_connect_errno()) {
         printf('Соединение не установлено', mysqli_error());
@@ -14,12 +14,11 @@ $mysqli->set_charset('utf8');
 
 $query = $mysqli->query('SELECT * FROM subscribe');
 
-$emailSub = mysqli_real_escape_string($mysqli, $_REQUEST['email__sub']);
-
+//$emailSub = mysqli_real_escape_string($mysqli, $_REQUEST['email__sub']);
+$emailSub = $_REQUEST['email'];
 if($query != '') {
-    $query = "INSERT INTO subscribe VALUES(null, '$emailSub')";
+    $query = "INSERT INTO subscribe VALUES (null, '$emailSub')";
 }
-
 
 
 if(mysqli_query($mysqli, $query)){
