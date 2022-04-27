@@ -1,8 +1,8 @@
 <?php
 
-    include 'php/mysqlauthentication.php';
-    include 'php/registration.php';
-    include 'php/subscribe.php';
+    require 'php/mysqlauthentication.php';
+    require 'php/registration.php';
+    require 'php/subscribe.php';
 
 ?>
 <!DOCTYPE html>
