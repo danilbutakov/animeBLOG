@@ -54,16 +54,21 @@ body.lock {
     &__button {
         display: flex;
         justify-content: center;
-        &_close {
+        @media(max-width: $md3) {
             display: none;
-            @media(max-width: $md3) {
-                display: block;
-                display: flex;
-                justify-content: space-around;
-            }
         }
     }
 }
+
+.form2__button_close{
+    display: none;
+    @media(max-width: $md3) {
+        display: block;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
 .form {
 
     &__label {

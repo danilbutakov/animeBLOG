@@ -715,6 +715,12 @@ body.lock {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 767.98px) {
+  .form2__button {
+    display: none;
+  }
+}
+
 .form2__button_close {
   display: none;
 }
