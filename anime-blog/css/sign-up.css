@@ -725,12 +725,11 @@ body.lock {
     display: block;
   }
 }
-
-.form2__button1_close {
+.form2__button1_close1 {
   display: none;
 }
 @media (max-width: 767.98px) {
-  .form2__button1_close {
+  .form2__button1_close1 {
     display: block;
     display: flex;
     justify-content: space-around;

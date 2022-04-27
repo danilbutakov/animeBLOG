@@ -63,17 +63,17 @@ body.lock {
             justify-content: space-around;
             display: block;
         }
+        &_close1 {
+            display: none;
+        @media(max-width: $md3) {
+            display: block;
+            display: flex;
+            justify-content: space-around;
+        }
+        }
     }
 }
 
-.form2__button1_close{
-    display: none;
-    @media(max-width: $md3) {
-        display: block;
-        display: flex;
-        justify-content: space-around;
-    }
-}
 
 .form {
 
