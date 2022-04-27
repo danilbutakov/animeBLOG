@@ -1,5 +1,7 @@
 <?php
 
+    require "php.mysqlauthentication.php";
+
     $email = $_REQUEST['email'];
     $pass = $_REQUEST['pass'];
     $pass = md5($pass);

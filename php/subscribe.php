@@ -1,5 +1,7 @@
 <?php
-    echo "test";
+    
+    require "php.mysqlauthentication.php";
+
     $query = $mysqli->query('SELECT * FROM subscribe');
 
     $emailSub = $_REQUEST['email__sub'];

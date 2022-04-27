@@ -1,5 +1,7 @@
 <?php
 
+    require "php.mysqlauthentication.php";
+
     $query = $mysqli->query("SELECT * FROM users");
 
     $name = $_REQUEST['name'];
