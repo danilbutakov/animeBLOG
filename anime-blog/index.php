@@ -1,7 +1,7 @@
 <?php
 
-    include_once './php/registration.php';
-    include_once './php/subscribe.php';
+    require './php/registration.php';
+    require './php/subscribe.php';
 
 ?>
 <!DOCTYPE html>
