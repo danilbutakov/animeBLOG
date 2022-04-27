@@ -673,9 +673,9 @@
             </div>
         </footer>
     </div>
+    <script src="js/header.js"></script>
     <script src="js/popup.js"></script>
 </body>
-<script src="js/header.js"></script>
 <script src="js/formIndex1.js"></script>
 <script src="js/formIndex2.js"></script>
 <script src="js/formIndex3.js"></script>

@@ -36,10 +36,10 @@
                     </div>
                     <nav class="header__menu">
                         <ul class="header__list">
-                            <li><a href="index.php" class="header__link _active">Home</a></li>
+                            <li><a href="index.php" class="header__link">Home</a></li>
                             <li><a href="" class="header__link">Connect</a></li>
                             <li><a href="#" class="header__link sign-up" id="open__pop_up">Sign up</a></li>
-                            <li><a href="login.php" class="header__link login">Login</a></li>
+                            <li><a href="login.php" class="header__link login _active">Login</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -93,9 +93,9 @@
             </section>
         </main>
     </div>
+    <script src="js/header.js"></script>
     <script src="js/popup.js"></script>
 </body>
-<script src="js/header.js"></script>
 <script src="js/formIndex1.js"></script>
 <script src="js/login.js"></script>
 </html>
