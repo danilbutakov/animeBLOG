@@ -18,5 +18,5 @@
     }
 
     $mysqli->close();
-
+    header('Location: /');
 ?>

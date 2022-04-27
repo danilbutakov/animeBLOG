@@ -1,8 +1,8 @@
 <?php
 
-    include_once 'php/mysqlauthentication.php';
-    include_once 'php/registration.php';
-    include_once 'php/subscribe.php';
+    include_once '/mysqlauthentication.php';
+    include_once '/registration.php';
+    include_once '/subscribe.php';
 
 ?>
 <!DOCTYPE html>
@@ -29,6 +29,9 @@
 </head>
 <body>
     <div class="wrapper">
+        <?php
+            if($_COOKIE['user' == '']):
+        ?>
         <header class="header">
             <div class="header__container _container">
                 <div class="header__body">
@@ -673,6 +676,9 @@
                 </div>
             </div>
         </footer>
+        <?php else: ?>
+            <p>Привет, <?=$_COOKIE['user']?>. Чтобы выйти нажмите <a href="/exit.php">здесь.</a></p>
+        <?php endif:?>
     </div>
     <script src="js/popup.js"></script>
 </body>

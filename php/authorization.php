@@ -12,8 +12,7 @@
         exit();
     }
 
-    print_r($user);
-    exit();
+    setcookie('user', $user['email'], time() + 3600, "/");
     
     if($query != '') {
         $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
@@ -26,4 +25,5 @@
     }
 
     $mysqli->close();
+    header('Location: /');
 ?>
