@@ -27,8 +27,6 @@ $mysqli->set_charset('utf8');
         echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
     }
 
-    $mysqli->close();
-
 
     $query2 = $mysqli2->query('SELECT * FROM subscribe');
 
@@ -44,6 +42,7 @@ $mysqli->set_charset('utf8');
         "ERROR: Не удалось выполнить $query2. " . mysqli_error($mysqli2);
     }
 
+    $mysqli(close);
     $mysqli2(close);
 
 ?>
