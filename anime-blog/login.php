@@ -22,7 +22,7 @@
     }
 
     if(mysqli_query($mysqli, $query)){
-        echo "Записи успешно добавлены.";
+        //echo "Записи успешно добавлены.";
     } else{
         "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
     }
@@ -55,7 +55,7 @@ $mysqli->set_charset('utf8');
     }
 
     if(mysqli_query($mysqli, $query)){
-        echo "Записи успешно добавлены.";
+        //echo "Записи успешно добавлены.";
     } else{
         echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
     }
