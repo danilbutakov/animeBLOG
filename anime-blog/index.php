@@ -90,13 +90,13 @@
                                 <label for="" class="form__label__password">Password</label>
                                 <input type="password" name="pass" class="form__input2 js-input1 js-input-password1" placeholder="Enter your Password" />
                             </div>
-                            <div class="form2__button">
-                                <button type="submit" name="submit" class="button__send">Sign up</button>
-                                <button class="close__pop_up">Close</button>
+                            <div class="form2__button1">
+                                <button type="submit" name="submit" class="button__send1">Sign up</button>
+                                <button class="close__pop_up1">Close</button>
                             </div>
-                            <div class="form2__button_close">
-                                <button type="submit" name="submit" class="button__send">Sign up</button>
-                                <button class="close__pop_up">Close</button>
+                            <div class="form2__button1_close">
+                                <button type="submit" name="submit" class="button__send1">Sign up</button>
+                                <button class="close__pop_up1">Close</button>
                             </div>
                         </form>
                         <div class="close__popup" id="close__pop_up">&#10006</div>
