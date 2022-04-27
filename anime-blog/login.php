@@ -21,6 +21,7 @@
         crossorigin="anonymous">
     </script>
     <script src="slick/slick.min.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -93,7 +94,6 @@
             </section>
         </main>
     </div>
-    <script src="js/header.js"></script>
     <script src="js/popup.js"></script>
 </body>
 <script src="js/formIndex1.js"></script>
