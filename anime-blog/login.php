@@ -56,7 +56,7 @@
                                 <input type="email" name="email" class="form__input js-input js-input-email" placeholder="Enter your Email" />
                             </div>
                             <div class="form2__item">
-                                <label for="" class="form__label password">Password</label>
+                                <label for="" class="form__label">Password</label>
                                 <input type="password" name="pass" class="form__input js-input js-input-password" placeholder="Enter your Password" />
                             </div>
                             <div class="form2__button">
@@ -81,7 +81,7 @@
                                 <input type="email" name="email" class="form__input2 js-input1 js-input-email1" placeholder="Enter your Email" />
                             </div>
                             <div class="form2__item">
-                                <label for="" class="form__label password">Password</label>
+                                <label for="" class="form__label">Password</label>
                                 <input type="password" name="pass" class="form__input2 js-input1 js-input-password1" placeholder="Enter your Password" />
                             </div>
                             <div class="form2__button">
