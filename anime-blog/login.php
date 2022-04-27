@@ -1,8 +1,8 @@
 <?php
 
-    require 'php/mysqlauthentication.php';
-    require 'php/authorization.php';
-    require 'php/registration.php';
+    include_once 'php/mysqlauthentication.php';
+    include_once 'php/authorization.php';
+    include_once 'php/registration.php';
 
 ?>
 <!DOCTYPE html>
