@@ -4,7 +4,7 @@
     $pass = $_REQUEST['pass'];
     $pass = md5($pass);
 
-    $result = $mysqli->query("SELECT * FROM users WHERE 'email' = '$email' AND 'pass' = '$pass'")
+    $result = $mysqli->query("SELECT * FROM `users` WHERE `email` = '$email' AND `pass` = '$pass'")
 
     $user = $result->fetch_assoc();
     if(count($user) == 0) {

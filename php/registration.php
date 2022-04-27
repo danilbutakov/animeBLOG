@@ -1,6 +1,6 @@
 <?php
 
-    $query = $mysqli->query("SELECT * FROM users");
+    $query = $mysqli->query("SELECT * FROM `users`");
 
     $name = $_REQUEST['name'];
     $email = $_REQUEST['email'];
