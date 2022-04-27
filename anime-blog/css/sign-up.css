@@ -733,7 +733,7 @@ body.lock {
   }
 }
 @media (min-width: 767.98px) {
-  .form__label.password {
+  .form__label__password {
     padding: 8px 15px;
   }
 }
