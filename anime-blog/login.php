@@ -64,7 +64,6 @@
                             </div>
                         </form>
                         <div class="results" id="results"></div>
-                        <button class="button__send">Close</button>
                     </div>
                 </div>
             </section>
@@ -90,6 +89,7 @@
                             </div>
                         </form>
                         <div class="close__popup" id="close__pop_up">&#10006</div>
+                        <button class="button__send">Close</button>
                     </div>
                 </div>
             </section>
