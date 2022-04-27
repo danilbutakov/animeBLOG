@@ -47,6 +47,9 @@
             </div>
         </header>
         <main class="page">
+            <?php
+                if($_COOKIE['user' == '']):
+            ?>
             <section class="sign">
                 <div class="sign__content _container-signlog">
                     <div class="content__form2">
@@ -69,9 +72,7 @@
             </section>
             <section class="popup" id="pop_up">
                 <div class="popup__container">
-                    <?php
-                        if($_COOKIE['user' == '']):
-                    ?>
+                    
                     <div class="popup__body">
                         <form action="" method="post" class="js-form1" novalidate>
                             <div class="form2__item">
@@ -92,11 +93,11 @@
                         </form>
                         <div class="close__popup" id="close__pop_up">&#10006</div>
                     </div>
-                    <?php else: ?>
-                        <p>Привет, <?=$_COOKIE['user']?>. Чтобы выйти нажмите <a href="/exit.php">здесь.</a></p>
-                    <?php endif:?>
                 </div>
             </section>
+            <?php else: ?>
+                <p>Привет, <?=$_COOKIE['user']?>. Чтобы выйти нажмите <a href="/exit.php">здесь.</a></p>
+            <?php endif:?>
         </main>
     </div>
     <script src="js/popup.js"></script>
