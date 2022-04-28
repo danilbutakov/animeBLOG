@@ -1,7 +1,7 @@
 <?php
 
-    include '/../php/registration.php';
-    include '/../php/subscribe.php';
+    include 'php/registration.php';
+    include 'php/subscribe.php';
 
 ?>
 <!DOCTYPE html>

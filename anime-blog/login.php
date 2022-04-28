@@ -1,6 +1,6 @@
 <?php
-    include '/../php/authorization.php';
-    include '/../php/registration.php';
+    include 'php/authorization.php';
+    include 'php/registration.php';
 
 ?>
 <!DOCTYPE html>
