@@ -1,6 +1,6 @@
 <?php
     
-    include 'php/mysqlauthentication.php';
+    require_once 'php/mysqlauthentication.php';
 
     $query = $mysqli->query('SELECT * FROM subscribe');
 
