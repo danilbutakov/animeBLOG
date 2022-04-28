@@ -1,6 +1,6 @@
 <?php
-    include_once './php/authorization.php';
-    include_once './php/registration.php';
+    include_once dirname(__FILE__) . '/../php/authorization.php';
+    include_once dirname(__FILE__) . '/../php/registration.php';
 
 ?>
 <!DOCTYPE html>
