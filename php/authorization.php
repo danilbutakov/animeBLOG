@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/mysqlauthentication.php';
+    include_once __DIR__ . '/mysqlauthentication.php';
 
     $email = $_REQUEST['email'];
     $pass = $_REQUEST['pass'];
