@@ -1,14 +1,6 @@
 <?php
     
-    $mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
-
-    if(mysqli_connect_errno()) {
-        printf('Соединение не установлено', mysqli_error());
-        exit();
-    }
-
-
-    $mysqli->set_charset('utf8');
+    include_once dirname(__FILE__) . '/../php/mysqlauthentication.php';
 
     $query = $mysqli->query('SELECT * FROM subscribe');
 
@@ -19,7 +11,7 @@
 
 
     if(mysqli_query($mysqli, $query)){
-        echo "Записи успешно добавлены.";
+        //echo "Записи успешно добавлены.";
     } else{
         "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
     }
