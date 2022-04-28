@@ -1,6 +1,4 @@
 <?php
-    
-    include_once __DIR__ . '/mysqlauthentication.php';
 
     $query = $mysqli->query('SELECT * FROM subscribe');
 

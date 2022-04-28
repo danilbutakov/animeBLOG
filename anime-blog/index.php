@@ -1,5 +1,6 @@
 <?php
 
+    require_once __DIR__ . '/mysqlauthentication.php';
     require_once __DIR__ . '/registration.php';
     require_once __DIR__ . '/subscribe.php';
 
