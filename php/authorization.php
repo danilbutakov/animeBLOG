@@ -1,6 +1,6 @@
 <?php
 
-    include_once dirname(__FILE__) . '/../php/mysqlauthentication.php';
+    include dirname(__FILE__) . '/../php/mysqlauthentication.php';
 
     $email = $_REQUEST['email'];
     $pass = $_REQUEST['pass'];

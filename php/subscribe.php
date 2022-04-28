@@ -1,6 +1,6 @@
 <?php
     
-    include_once dirname(__FILE__) . '/../php/mysqlauthentication.php';
+    include dirname(__FILE__) . '/../php/mysqlauthentication.php';
 
     $query = $mysqli->query('SELECT * FROM subscribe');
 
