@@ -1,7 +1,7 @@
 <?php
 
-    require_once __DIR__ . '/php/registration.php';
-    include __DIR__ . '/php/subscribe.php';
+include_once __DIR__ . '/php/registration.php';
+    include_once __DIR__ . '/php/subscribe.php';
 
 ?>
 <!DOCTYPE html>

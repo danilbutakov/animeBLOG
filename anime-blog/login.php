@@ -1,7 +1,7 @@
 <?php
 
-    require_once __DIR__ . '/php/authorization.php';
-    require_once __DIR__ . '/php/registration.php';
+include_once __DIR__ . '/php/authorization.php';
+include_once __DIR__ . '/php/registration.php';
 
 ?>
 <!DOCTYPE html>
