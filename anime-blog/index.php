@@ -1,7 +1,7 @@
 <?php
 
-    include_once dirname(__FILE__) . '/../php/registration.php';
-    include_once dirname(__FILE__) . '/../php/subscribe.php';
+    include '/../php/registration.php';
+    include '/../php/subscribe.php';
 
 ?>
 <!DOCTYPE html>

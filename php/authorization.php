@@ -1,6 +1,6 @@
 <?php
 
-    include '/../php/mysqlauthentication.php';
+    include '/php/mysqlauthentication.php';
 
     $email = $_REQUEST['email'];
     $pass = $_REQUEST['pass'];
