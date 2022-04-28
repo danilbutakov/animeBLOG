@@ -10,7 +10,7 @@ if(mysqli_connect_errno()) {
 
 $mysqli->set_charset('utf8');
 
-    $query = $mysqli->query("SELECT * FROM `users`");
+    $query = $mysqli->query("SELECT * FROM users");
 
     $name = $_REQUEST['name'];
     $email = $_REQUEST['email'];
@@ -18,7 +18,7 @@ $mysqli->set_charset('utf8');
     $pass = md5($pass);
 
     if($query != '') {
-        $query = "INSERT INTO users VALUES (null, `$name`, `$email`, `$pass`)";
+        $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
     }
 
     if(mysqli_query($mysqli, $query)){
