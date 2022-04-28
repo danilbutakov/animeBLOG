@@ -1,6 +1,6 @@
 <?php
 
-    require_once '/php/mysqlauthentication.php';
+    include_once '/php/mysqlauthentication.php';
 
     $email = $_REQUEST['email'];
     $pass = $_REQUEST['pass'];
