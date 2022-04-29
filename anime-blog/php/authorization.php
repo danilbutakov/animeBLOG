@@ -18,7 +18,7 @@ $mysqli->set_charset('utf8');
 
     
     if($query != '') {
-        $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
+        $query = "INSERT INTO users VALUES (null, '$email', '$pass')";
     }
 
     if(mysqli_query($mysqli, $query)){
