@@ -733,6 +733,11 @@ body.lock {
     justify-content: space-around;
   }
 }
+.form2__msg {
+  text-align: center;
+  border: 2px solid #c20000;
+  border-radius: 3px;
+}
 
 button.button__send1 {
   font-family: 'Poppins';

@@ -100,6 +100,9 @@
                                 <button type="submit" name="do_signup" class="button__send1">Sign up</button>
                                 <button class="close__pop_up" id="close__pop_up_1">Close</button>
                             </div>
+                            <div class="form2__msg">
+                                какое-то сообщение
+                            </div>
                         </form>
                         <div class="close__popup" id="close__pop_up">&#10006</div>
                     </div>
