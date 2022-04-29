@@ -1,8 +1,8 @@
 <?php
 
-    require_once '/php/authorization.php';
+    require_once __DIR__. '/../authorization.php';
 
-    require_once '/php/registration.php';
+    require_once __DIR__. '/../registration.php';
 
 ?>
 <!DOCTYPE html>
