@@ -8,6 +8,6 @@
 
     $query = $mysqli->query("SELECT * FROM users WHERE 'email' = '$email' AND 'pass' = '$pass'");
 
-    echo mysqli_num_rows($query);
+    print_r (mysqli_num_rows($query));
 
 ?>
