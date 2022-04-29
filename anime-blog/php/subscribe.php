@@ -13,6 +13,3 @@
     } else{
         "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
     }
-
-
-?>
