@@ -1,5 +1,7 @@
 <?php
 
+    session_start();
+
     require_once __DIR__. '/php/mysqlauthentication.php';
 
     require_once __DIR__. '/php/subscribe.php';
@@ -100,9 +102,12 @@
                                 <button type="submit" name="do_signup" class="button__send1">Sign up</button>
                                 <button class="close__pop_up" id="close__pop_up_1">Close</button>
                             </div>
-                            <div class="form2__msg">
-                                какое-то сообщение
-                            </div>
+                                <?php
+                                    if ($_SESSION['message']) {
+                                        echo '<div class="form2__msg">' . $_SESSION['message'] . '</div>';
+                                    }
+                                    unset($_SESSION['message']);
+                                ?>
                         </form>
                         <div class="close__popup" id="close__pop_up">&#10006</div>
                     </div>
