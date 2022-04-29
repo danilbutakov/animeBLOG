@@ -20,4 +20,4 @@ if (mysqli_query($mysqli, $query)) {
 
 $mysqli->close();
 
-header('Location: login.php');
+header('Location: index.php');
