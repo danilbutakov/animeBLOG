@@ -1,4 +1,5 @@
 <?php
+
 $query = $mysqli->query("SELECT * FROM users");
 
 $name = $_REQUEST['name'];
@@ -11,7 +12,6 @@ if ($query != '') {
 }
 
 if (mysqli_query($mysqli, $query)) {
-    //header('Location: index.php');
 } else {
     //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
 }
