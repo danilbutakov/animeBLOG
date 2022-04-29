@@ -2,15 +2,15 @@
 
     session_start();
 
-    $query = $mysqli->query("SELECT * FROM `users` WHERE `email` = '$email' AND `pass` = '$pass'");
+    $check_user = $mysqli->query("SELECT * FROM `users` WHERE `email` = '$email' AND `pass` = '$pass'");
 
     $email = $_REQUEST['email'];
     $pass = $_REQUEST['pass'];
     $pass = md5($pass);
 
     
-    if($query != '') {
-        $user = mysqli_fetch_assoc($query);
+    if($check_user != '') {
+        $user = mysqli_fetch_assoc($check_user);
         
         $_SESSION['user'] = [
             "id" => $user['id'],
@@ -22,10 +22,10 @@
         //header('Location: login.php');
     }
 
-    if(mysqli_query($mysqli, $query)){
+    if(mysqli_query($mysqli, $check_user)){
         //echo "Записи успешно добавлены.";
     } else{
-        echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
+        echo "ERROR: Не удалось выполнить $check_user. " . mysqli_error($mysqli);
     }
 
 ?>
