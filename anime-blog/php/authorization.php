@@ -1,5 +1,6 @@
 <?php
 
+
 $email = $_REQUEST['email'];
 $pass = md5($_REQUEST['pass']);
 
@@ -12,7 +13,7 @@ if (count($user) == 0) {
     exit();
 }
 
-setcookie('user', $user['email'], time() + 3600, "/");
+setcookie('user', $user['email'], time() + 3600, 'php/exit.php');
 
 $mysqli->close();
 
