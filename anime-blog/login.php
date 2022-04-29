@@ -98,7 +98,7 @@
                                         echo '<div class="form2__msg">' . $_SESSION['message'] . '</div>';
                                     }
                                     unset($_SESSION['message']);
-                                ?>
+                            ?>
                         </form>
                         <div class="close__popup" id="close__pop_up">&#10006</div>
                     </div>
