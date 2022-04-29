@@ -13,6 +13,7 @@ if ($query != '') {
 
 if (mysqli_query($mysqli, $query)) {
     header('Location: index.php');
+    exit();
 } else {
     //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
 }
