@@ -18,4 +18,4 @@ exit();
 
 $mysqli->close();
 
-header('Location: /');
+header('Location: index.php');
