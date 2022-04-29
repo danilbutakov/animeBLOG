@@ -737,6 +737,8 @@ body.lock {
   text-align: center;
   border: 2px solid #c20000;
   border-radius: 3px;
+  padding-top: 10px;
+  color: #FAFAFA;
 }
 
 button.button__send1 {
