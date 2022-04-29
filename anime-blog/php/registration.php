@@ -13,8 +13,11 @@
         $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
     }
 
-    $_SESSION['message'] = 'Регистрация прошла успешно!';
-    header('Location: login.php');
+    if(mysqli_query($mysqli, $query)){
+        $_SESSION['message'] = 'Регистрация прошла успешно!';
+    } else{
+        //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
+    }
 
     $mysqli->close();
 
