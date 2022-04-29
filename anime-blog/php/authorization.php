@@ -3,8 +3,7 @@
     session_start();
 
     $email = $_REQUEST['email'];
-    $pass = $_REQUEST['pass'];
-    $pass = md5($pass);
+    $pass = md5($_REQUEST['pass']);
 
     $query = $mysqli->query("SELECT * FROM `users` WHERE `email` = '$email' AND `pass` = '$pass'");
 
