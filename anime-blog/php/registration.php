@@ -2,9 +2,9 @@
 ob_start();
 $query = $mysqli->query("SELECT * FROM users");
 
-$name = $_REQUEST['name'];
-$email = $_REQUEST['email'];
-$pass = $_REQUEST['pass'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$pass = $_POST['pass'];
 $pass = md5($pass);
 
 if ($query != '') {

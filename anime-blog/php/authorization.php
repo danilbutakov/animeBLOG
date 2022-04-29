@@ -1,8 +1,8 @@
 <?php
 ob_start();
 
-$email = $_REQUEST['email'];
-$pass = md5($_REQUEST['pass']);
+$email = $_POST['email'];
+$pass = md5($_POST['pass']);
 
 $result = $mysqli->query("SELECT * FROM `users` WHERE `email` = '$email' AND `pass` = '$pass'");
 
