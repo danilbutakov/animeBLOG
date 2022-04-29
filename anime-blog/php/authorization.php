@@ -8,7 +8,7 @@ $result = $mysqli->query("SELECT * FROM `users` WHERE `email` = '$email' AND `pa
 
 $user = $result->fetch_assoc();
 
-if (count($user) == 0) {
+if (count($user, $pass) == 0) {
     echo "Такой пользователь не найден";
     exit();
 }
