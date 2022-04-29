@@ -13,4 +13,4 @@ if ($query != '') {
 
 $mysqli->close();
 
-header('Location: /');
+header('Location: ');
