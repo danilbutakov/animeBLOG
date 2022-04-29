@@ -10,10 +10,13 @@
     $pass = md5($pass);
 
     if($query != '') {
-        $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
+        
     } 
 
-    if ($pass !== '') {
+    if ($pass != '') {
+
+        $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
+
         $_SESSION['message'] = 'Регистрация прошла успешно!';
         //header('Location: /index.php');
     }
