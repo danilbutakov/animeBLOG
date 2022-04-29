@@ -15,7 +15,7 @@
 
     if(mysqli_query($mysqli, $query)){
         $_SESSION['message'] = 'Регистрация прошла успешно!';
-        
+        //header('Location: index.php');
     } else{
         //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
     }

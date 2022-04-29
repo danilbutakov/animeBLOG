@@ -19,7 +19,7 @@
         ];
     } else {
         $_SESSION['message'] = 'Не верный логин или пароль';
-        header('Location: login.php');
+        //header('Location: login.php');
     }
 
     if(mysqli_query($mysqli, $query)){
