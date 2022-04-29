@@ -13,7 +13,7 @@ if (count($user) == 0) {
     exit();
 }
 
-setcookie('user', $user['email'], time() + 3600, 'php/exit.php');
+setcookie('user', $user['email'], time() + 3600, "/");
 
 $mysqli->close();
 
