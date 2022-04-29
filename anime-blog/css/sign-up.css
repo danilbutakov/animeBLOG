@@ -735,8 +735,8 @@ body.lock {
 }
 .form2__msg {
   text-align: center;
-  border: 2px solid #c20000;
-  border-radius: 3px;
+  border: 2px solid red;
+  border-radius: 5px;
   margin-top: 10px;
   font-family: 'Poppins';
   font-style: normal;
