@@ -14,6 +14,6 @@
     }
 
     $_SESSION['message'] = 'Регистрация прошла успешно!';
-    header('Location: ../login.php');
+    header('Location: /php/login.php');
 
 ?>
