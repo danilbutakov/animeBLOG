@@ -16,5 +16,4 @@ if (mysqli_query($mysqli, $query)) {
     //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
 }
 
-
 $mysqli->close();
