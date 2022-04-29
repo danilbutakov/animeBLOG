@@ -13,7 +13,7 @@
         $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
     } 
 
-    if ($pass != '') {
+    if ($pass !== '') {
         $_SESSION['message'] = 'Регистрация прошла успешно!';
         //header('Location: /index.php');
     }
