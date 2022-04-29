@@ -12,7 +12,7 @@ if ($query != '') {
 }
 
 if (mysqli_query($mysqli, $query)) {
-    header('Location: /php/login.php');
+    header('Location: /login.php');
 } else {
     //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
 }
