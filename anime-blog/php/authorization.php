@@ -1,5 +1,4 @@
 <?php
-ob_start();
 
 $email = $_REQUEST['email'];
 $pass = md5($_REQUEST['pass']);
