@@ -24,6 +24,5 @@ $mysqli->set_charset('utf8');
         "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
     }
 
-    $mysqli(close);
 
 ?>
