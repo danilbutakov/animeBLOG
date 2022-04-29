@@ -2,7 +2,7 @@
 
     session_start();
 
-    $check_user = $mysqli->query("SELECT * FROM `users` WHERE `email` = '$email' AND `pass` = '$pass'");
+    $check_user = $mysqli->query("SELECT * FROM users WHERE 'email' = '$email' AND 'pass' = '$pass'");
 
     $email = $_REQUEST['email'];
     $pass = $_REQUEST['pass'];
