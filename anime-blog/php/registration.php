@@ -12,8 +12,10 @@ if ($query != '') {
 }
 
 if (mysqli_query($mysqli, $query)) {
+    header('Location: /');
 } else {
     //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
 }
+
 
 $mysqli->close();
