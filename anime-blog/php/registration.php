@@ -18,4 +18,4 @@ if (mysqli_query($mysqli, $query)) {
 
 $mysqli->close();
 
-//header('Location: index.php');
+header('Location: /');
