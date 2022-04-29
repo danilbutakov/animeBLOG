@@ -1,14 +1,10 @@
 <?php
 
-    $mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
+    require_once __DIR__ . '/mysqlauthentication.php';
 
-    if(mysqli_connect_errno()) {
-        printf('Соединение не установлено', mysqli_error());
-        exit();
-    }
-
-
-    $mysqli->set_charset('utf8');
+    require_once __DIR__ . '/authorization.php';
+    
+    require_once __DIR__ . '/registration.php';
 
     
 
