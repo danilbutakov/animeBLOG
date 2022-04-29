@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 $query = $mysqli->query("SELECT * FROM users");
 
 $name = $_REQUEST['name'];
