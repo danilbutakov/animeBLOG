@@ -1,7 +1,10 @@
 <?php
-    $connect = new mysqli('localhost', 'dan', '1234', 'anime-blog');
+    $mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
 
-    if(!$connect) {
-        die('Error conncet to DataBase');
+    if(mysqli_connect_errno()) {
+        printf('Соединение не установлено', mysqli_error());
+        exit();
     }
+
+    $mysqli->set_charset('utf8');
 ?>
