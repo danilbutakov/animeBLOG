@@ -1,5 +1,7 @@
 <?php
 
+    require_once __DIR__. '/php/mysqlauthentication.php';
+
     require_once __DIR__. '/php/authorization.php';
 
     require_once __DIR__. '/php/registration.php';
@@ -85,10 +87,10 @@
                                 <input type="password" name="pass" class="form__input2 js-input1 js-input-password1" placeholder="Enter your Password" />
                             </div>
                             <div class="form2__button1">
-                                <button type="submit" name="submit" class="button__send1">Sign up</button>
+                                <button type="submit" name="do_signup" class="button__send1">Sign up</button>
                             </div>
                             <div class="form2__button1_close1">
-                                <button type="submit" name="submit" class="button__send1">Sign up</button>
+                                <button type="submit" name="do_signup" class="button__send1">Sign up</button>
                                 <button class="close__pop_up" id="close__pop_up_1">Close</button>
                             </div>
                         </form>

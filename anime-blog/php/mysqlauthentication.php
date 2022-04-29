@@ -6,6 +6,7 @@
         exit();
     }
 
+    session_start();
 
     $mysqli->set_charset('utf8');
 ?>
