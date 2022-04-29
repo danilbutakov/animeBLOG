@@ -11,11 +11,6 @@ if ($query != '') {
     $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
 }
 
-if (mysqli_query($mysqli, $query)) {
-} else {
-    //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
-}
-
 $mysqli->close();
 
 //header('Location: index.php');
