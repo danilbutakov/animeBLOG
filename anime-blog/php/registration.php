@@ -1,24 +1,21 @@
 <?php
 
-    session_start();
+session_start();
 
-    $query = $mysqli->query("SELECT * FROM users");
+$query = $mysqli->query("SELECT * FROM users");
 
-    $name = $_REQUEST['name'];
-    $email = $_REQUEST['email'];
-    $pass = $_REQUEST['pass'];
-    $pass = md5($pass);
+$name = $_REQUEST['name'];
+$email = $_REQUEST['email'];
+$pass = $_REQUEST['pass'];
+$pass = md5($pass);
 
-    if($query != '') {
-        $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
-    } 
+if ($query != '') {
+    $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
+}
 
-    if(mysqli_query($mysqli, $query)){
-        
-    } else{
-        //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
-    }
+if (mysqli_query($mysqli, $query)) {
+} else {
+    //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
+}
 
-    $mysqli->close();
-
-?>
+$mysqli->close();

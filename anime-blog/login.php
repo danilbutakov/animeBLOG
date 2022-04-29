@@ -1,16 +1,17 @@
 <?php
 
-    session_start();
+session_start();
 
-    require_once __DIR__. '/php/mysqlauthentication.php';
+require_once __DIR__ . '/php/mysqlauthentication.php';
 
-    require_once __DIR__. '/php/authorization.php';
+require_once __DIR__ . '/php/authorization.php';
 
-    require_once __DIR__. '/php/registration.php';
+require_once __DIR__ . '/php/registration.php';
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,15 +21,13 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/sign-up.css">
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
     </script>
     <script src="slick/slick.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/script.js"></script>
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
@@ -73,12 +72,12 @@
             </section>
             <section class="popup" id="pop_up">
                 <div class="popup__container">
-                    
+
                     <div class="popup__body">
                         <form action="" method="post" class="js-form1" novalidate>
                             <div class="form2__item">
                                 <label for="" class="form__label">Name</label>
-                                <input type="text" name="name" class="form__input2 js-input1" placeholder="Enter your Name"/>
+                                <input type="text" name="name" class="form__input2 js-input1" placeholder="Enter your Name" />
                             </div>
                             <div class="form2__item">
                                 <label for="" class="form__label">Email</label>
@@ -96,10 +95,10 @@
                                 <button class="close__pop_up" id="close__pop_up_1">Close</button>
                             </div>
                             <?php
-                                    if ($_SESSION['message']) {
-                                        echo '<div class="form2__msg">' . $_SESSION['message'] . '</div>';
-                                    }
-                                    unset($_SESSION['message']);
+                            if ($_SESSION['message']) {
+                                echo '<div class="form2__msg">' . $_SESSION['message'] . '</div>';
+                            }
+                            unset($_SESSION['message']);
                             ?>
                         </form>
                         <div class="close__popup" id="close__pop_up">&#10006</div>
@@ -112,4 +111,5 @@
 </body>
 <script src="js/formIndex1.js"></script>
 <script src="js/login.js"></script>
+
 </html>

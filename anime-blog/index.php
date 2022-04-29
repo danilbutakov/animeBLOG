@@ -1,16 +1,17 @@
 <?php
 
-    session_start();
+session_start();
 
-    require_once __DIR__. '/php/mysqlauthentication.php';
+require_once __DIR__ . '/php/mysqlauthentication.php';
 
-    require_once __DIR__. '/php/subscribe.php';
+require_once __DIR__ . '/php/subscribe.php';
 
-    require_once __DIR__. '/php/registration.php';
+require_once __DIR__ . '/php/registration.php';
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,15 +24,13 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
     </script>
     <script src="slick/slick.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/script.js"></script>
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
@@ -64,7 +63,7 @@
                             <form action="" method="post" class="js-form2" novalidate>
                                 <button class="form__button" type="submit" name="submit">SUBSCRIBE</button>
                                 <input type="email" name="email__sub" class="form__input js-input2 js-input-email2" placeholder="Enter your email">
-                                <button class="form__ico" type="submit" name="submit"><img src="img/ico/Group 4.png" alt=""></button> 
+                                <button class="form__ico" type="submit" name="submit"><img src="img/ico/Group 4.png" alt=""></button>
                             </form>
                         </div>
                     </div>
@@ -85,7 +84,7 @@
                         <form action="" method="post" class="js-form1" novalidate>
                             <div class="form2__item">
                                 <label for="" class="form__label">Name</label>
-                                <input type="text" name="name" class="form__input2 js-input1" placeholder="Enter your Name"/>
+                                <input type="text" name="name" class="form__input2 js-input1" placeholder="Enter your Name" />
                             </div>
                             <div class="form2__item">
                                 <label for="" class="form__label">Email</label>
@@ -172,10 +171,12 @@
                                 Fantasy<span class="info__span">· 1 Month Ago</span>
                             </div>
                             <div class="item__title">
-                                <a href="attack-on-titans.html"><h4>Attack On Titans</h4></a>
+                                <a href="attack-on-titans.html">
+                                    <h4>Attack On Titans</h4>
+                                </a>
                             </div>
                             <div class="item__text">
-                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
+                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
                             </div>
                             <div class="item__under under">
                                 <div class="under__read">
@@ -194,10 +195,12 @@
                                 History<span class="info__span">· 1 Month Ago</span>
                             </div>
                             <div class="item__title">
-                                <a href=""><h4>Dr. Stone</h4></a>
+                                <a href="">
+                                    <h4>Dr. Stone</h4>
+                                </a>
                             </div>
                             <div class="item__text">
-                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
+                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
                             </div>
                             <div class="item__under under">
                                 <div class="under__read">
@@ -216,10 +219,12 @@
                                 Drama<span class="info__span">· 1 Month Ago</span>
                             </div>
                             <div class="item__title">
-                                <a href=""><h4>Second Chance</h4></a>
+                                <a href="">
+                                    <h4>Second Chance</h4>
+                                </a>
                             </div>
                             <div class="item__text">
-                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
+                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
                             </div>
                             <div class="item__under under">
                                 <div class="under__read">
@@ -238,10 +243,12 @@
                                 Drama<span class="info__span">· 1 Month Ago</span>
                             </div>
                             <div class="item__title">
-                                <a href=""><h4>Second Chance</h4></a>
+                                <a href="">
+                                    <h4>Second Chance</h4>
+                                </a>
                             </div>
                             <div class="item__text">
-                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
+                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
                             </div>
                             <div class="item__under under">
                                 <div class="under__read">
@@ -260,10 +267,12 @@
                                 Drama<span class="info__span">· 1 Month Ago</span>
                             </div>
                             <div class="item__title">
-                                <a href=""><h4>Second Chance</h4></a>
+                                <a href="">
+                                    <h4>Second Chance</h4>
+                                </a>
                             </div>
                             <div class="item__text">
-                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
+                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
                             </div>
                             <div class="item__under under">
                                 <div class="under__read">
@@ -282,10 +291,12 @@
                                 Drama<span class="info__span">· 1 Month Ago</span>
                             </div>
                             <div class="item__title">
-                                <a href=""><h4>Second Chance</h4></a>
+                                <a href="">
+                                    <h4>Second Chance</h4>
+                                </a>
                             </div>
                             <div class="item__text">
-                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
+                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
                             </div>
                             <div class="item__under under">
                                 <div class="under__read">
@@ -304,10 +315,12 @@
                                 Drama<span class="info__span">· 1 Month Ago</span>
                             </div>
                             <div class="item__title">
-                                <a href=""><h4>Second Chance</h4></a>
+                                <a href="">
+                                    <h4>Second Chance</h4>
+                                </a>
                             </div>
                             <div class="item__text">
-                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
+                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
                             </div>
                             <div class="item__under under">
                                 <div class="under__read">
@@ -326,10 +339,12 @@
                                 Drama<span class="info__span">· 1 Month Ago</span>
                             </div>
                             <div class="item__title">
-                                <a href=""><h4>Second Chance</h4></a>
+                                <a href="">
+                                    <h4>Second Chance</h4>
+                                </a>
                             </div>
                             <div class="item__text">
-                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
+                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
                             </div>
                             <div class="item__under under">
                                 <div class="under__read">
@@ -348,10 +363,12 @@
                                 Drama<span class="info__span">· 1 Month Ago</span>
                             </div>
                             <div class="item__title">
-                                <a href=""><h4>Second Chance</h4></a>
+                                <a href="">
+                                    <h4>Second Chance</h4>
+                                </a>
                             </div>
                             <div class="item__text">
-                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
+                                lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.
                             </div>
                             <div class="item__under under">
                                 <div class="under__read">
@@ -382,7 +399,9 @@
                                 </a>
                                 <div class="item2__info2">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Akame Ga Kill: Season finale</h4></a>
+                                        <a href="">
+                                            <h4>Akame Ga Kill: Season finale</h4>
+                                        </a>
                                     </div>
                                     <div class="item2__text2">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -397,7 +416,9 @@
                                 </a>
                                 <div class="item2__info2">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Naruto Uzumaki: Hidden Village</h4></a>
+                                        <a href="">
+                                            <h4>Naruto Uzumaki: Hidden Village</h4>
+                                        </a>
                                     </div>
                                     <div class="item2__text2">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -412,7 +433,9 @@
                                 </a>
                                 <div class="item2__info2">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Love juice Season Priemere</h4></a>
+                                        <a href="">
+                                            <h4>Love juice Season Priemere</h4>
+                                        </a>
                                     </div>
                                     <div class="item2__text2">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -427,7 +450,9 @@
                                 </a>
                                 <div class="item2__info2">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Akame Ga Kill: Season finale</h4></a>
+                                        <a href="">
+                                            <h4>Akame Ga Kill: Season finale</h4>
+                                        </a>
                                     </div>
                                     <div class="item2__text2">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -442,7 +467,9 @@
                                 </a>
                                 <div class="item2__info2">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Akame Ga Kill: Season finale</h4></a>
+                                        <a href="">
+                                            <h4>Akame Ga Kill: Season finale</h4>
+                                        </a>
                                     </div>
                                     <div class="item2__text2">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -457,7 +484,9 @@
                                 </a>
                                 <div class="item2__info2">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Akame Ga Kill: Season finale</h4></a>
+                                        <a href="">
+                                            <h4>Akame Ga Kill: Season finale</h4>
+                                        </a>
                                     </div>
                                     <div class="item2__text2">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -472,7 +501,9 @@
                                 </a>
                                 <div class="item2__info2">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Akame Ga Kill: Season finale</h4></a>
+                                        <a href="">
+                                            <h4>Akame Ga Kill: Season finale</h4>
+                                        </a>
                                     </div>
                                     <div class="item2__text2">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -487,7 +518,9 @@
                                 </a>
                                 <div class="item2__info2">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Akame Ga Kill: Season finale</h4></a>
+                                        <a href="">
+                                            <h4>Akame Ga Kill: Season finale</h4>
+                                        </a>
                                     </div>
                                     <div class="item2__text2">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -502,12 +535,24 @@
                 <div class="blog__container _container">
                     <h3 class="blog__title title">Blog</h3>
                     <div class="blog__categorys">
-                        <a href=""><h3 class="categorys__title">comedy</h3></a>
-                        <a href=""><h3 class="categorys__title">fantasy</h3></a>
-                        <a href=""><h3 class="categorys__title">drama</h3></a>
-                        <a href=""><h3 class="categorys__title">action</h3></a>
-                        <a href=""><h3 class="categorys__title">history</h3></a>
-                        <a href=""><h3 class="categorys__title">military</h3></a>
+                        <a href="">
+                            <h3 class="categorys__title">comedy</h3>
+                        </a>
+                        <a href="">
+                            <h3 class="categorys__title">fantasy</h3>
+                        </a>
+                        <a href="">
+                            <h3 class="categorys__title">drama</h3>
+                        </a>
+                        <a href="">
+                            <h3 class="categorys__title">action</h3>
+                        </a>
+                        <a href="">
+                            <h3 class="categorys__title">history</h3>
+                        </a>
+                        <a href="">
+                            <h3 class="categorys__title">military</h3>
+                        </a>
                     </div>
                     <div class="blog__content">
                         <div class="blog__fantasy">
@@ -522,10 +567,12 @@
                                             <span>1 Month Ago</span>
                                         </div>
                                         <div class="item__title">
-                                            <a href="attack-on-titans.html"><h4>Attack On Titans</h4></a>
+                                            <a href="attack-on-titans.html">
+                                                <h4>Attack On Titans</h4>
+                                            </a>
                                         </div>
                                         <div class="item__text">
-                                            lit. Phasellus aliquet nibh id iaculis pharetra. <br> Maecenas  eleifend sed ex. Donec quis magna <br> sed felis elementum blandit nec quis sem. <br> Maecen.
+                                            lit. Phasellus aliquet nibh id iaculis pharetra. <br> Maecenas eleifend sed ex. Donec quis magna <br> sed felis elementum blandit nec quis sem. <br> Maecen.
                                         </div>
                                         <div class="item__under under">
                                             <div class="under__full">
@@ -541,7 +588,9 @@
                                         </a>
                                         <div class="item2__info2">
                                             <div class="item2__title2">
-                                                <a href=""><h4>Akame Ga Kill: Season finale</h4></a>
+                                                <a href="">
+                                                    <h4>Akame Ga Kill: Season finale</h4>
+                                                </a>
                                             </div>
                                             <div class="item2__text2">
                                                 21 march 2021
@@ -554,7 +603,9 @@
                                         </a>
                                         <div class="item2__info2">
                                             <div class="item2__title2">
-                                                <a href=""><h4>Naruto Uzumaki: Hidden Village</h4></a>
+                                                <a href="">
+                                                    <h4>Naruto Uzumaki: Hidden Village</h4>
+                                                </a>
                                             </div>
                                             <div class="item2__text2">
                                                 21 march 2021
@@ -567,7 +618,9 @@
                                         </a>
                                         <div class="item2__info2">
                                             <div class="item2__title2">
-                                                <a href=""><h4>Love juice Season Priemere</h4></a>
+                                                <a href="">
+                                                    <h4>Love juice Season Priemere</h4>
+                                                </a>
                                             </div>
                                             <div class="item2__text2">
                                                 21 march 2021
@@ -580,7 +633,9 @@
                                         </a>
                                         <div class="item2__info2">
                                             <div class="item2__title2">
-                                                <a href=""><h4>Love juice Season Priemere</h4></a>
+                                                <a href="">
+                                                    <h4>Love juice Season Priemere</h4>
+                                                </a>
                                             </div>
                                             <div class="item2__text2">
                                                 21 march 2021
@@ -598,7 +653,9 @@
                                 </a>
                                 <div class="item3__info3">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Akame Ga Kill: Season finale</h4></a>
+                                        <a href="">
+                                            <h4>Akame Ga Kill: Season finale</h4>
+                                        </a>
                                     </div>
                                     <div class="item3__text3">
                                         21 march 2021
@@ -611,7 +668,9 @@
                                 </a>
                                 <div class="item3__info3">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Naruto Uzumaki: Hidden Village</h4></a>
+                                        <a href="">
+                                            <h4>Naruto Uzumaki: Hidden Village</h4>
+                                        </a>
                                     </div>
                                     <div class="item3__text3">
                                         21 march 2021
@@ -624,7 +683,9 @@
                                 </a>
                                 <div class="item3__info3">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Love juice Season Priemere</h4></a>
+                                        <a href="">
+                                            <h4>Love juice Season Priemere</h4>
+                                        </a>
                                     </div>
                                     <div class="item3__text3">
                                         21 march 2021
@@ -637,7 +698,9 @@
                                 </a>
                                 <div class="item3__info3">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Love juice Season Priemere</h4></a>
+                                        <a href="">
+                                            <h4>Love juice Season Priemere</h4>
+                                        </a>
                                     </div>
                                     <div class="item3__text3">
                                         21 march 2021
@@ -650,7 +713,9 @@
                                 </a>
                                 <div class="item3__info3">
                                     <div class="item2__title2">
-                                        <a href=""><h4>Love juice Season Priemere</h4></a>
+                                        <a href="">
+                                            <h4>Love juice Season Priemere</h4>
+                                        </a>
                                     </div>
                                     <div class="item3__text3">
                                         21 march 2021
@@ -673,7 +738,7 @@
                         <form action="" method="post" class="js-form3" novalidate>
                             <button class="form__button" type="submit">SUBSCRIBE</button>
                             <input type="email" name="email__sub" class="form__input js-input3 js-input-email3" placeholder="Enter your email">
-                            <button class="form__ico" type="submit"><img src="img/ico/Group 4.png" alt=""></button> 
+                            <button class="form__ico" type="submit"><img src="img/ico/Group 4.png" alt=""></button>
                         </form>
                     </div>
                 </div>
@@ -688,4 +753,5 @@
 <script src="js/formIndex1.js"></script>
 <script src="js/formIndex2.js"></script>
 <script src="js/formIndex3.js"></script>
+
 </html>
