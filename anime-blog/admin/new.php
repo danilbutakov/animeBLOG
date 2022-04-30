@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once __DIR__ . '/../php/mysqlauthentication.php';
+require_once __DIR__ . '../php/mysqlauthentication.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
