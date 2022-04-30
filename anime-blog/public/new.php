@@ -1,7 +1,4 @@
-<?php require_once __DIR__ . '/php/mysqlauthentication.php'; ?>
 <?php
-$sql = $mysqli->query("SELECT * FROM `new`");
-$res = $sql->fetch_assoc();
 ?>
 <section class="new">
     <div class="new__content _container">
