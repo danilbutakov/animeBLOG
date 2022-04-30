@@ -16,7 +16,7 @@
                                 <span>12 Min Read</span>
                             </div>
                             <div class="under__full">
-                                <a href="attack-on-titans.html"><span>Read Full <img src="img/ico/arrow.png" alt=""></span></a>
+                                <a href="attack-on-titans.php"><span>Read Full <img src="img/ico/arrow.png" alt=""></span></a>
                             </div>
                         </div>
                     </div>
@@ -26,18 +26,18 @@
                 <div class="row__items">
                     <div class="row__item">
                         <div class="row__info">Fantasy <span>· 1 Month Ago</span></div>
-                        <div class="row__title"><a href="attack-on-titans.html">Attack On Titans</a></div>
+                        <div class="row__title"><a href="attack-on-titans.php">Attack On Titans</a></div>
                         <div class="row__text">The CSS Grid Layout Module offers a <br> grid-based layout system, with rows and <br> columns, making it easier to design web pages <br> without having to use floats and positioning.</div>
                         <div class="row__under under">
                             <div class="under__read">
                                 <span>12 Min Read</span>
                             </div>
                             <div class="under__full">
-                                <a href="attack-on-titans.html"><span>Read Full <img src="img/ico/arrow.png" alt=""></span></a>
+                                <a href="attack-on-titans.php"><span>Read Full <img src="img/ico/arrow.png" alt=""></span></a>
                             </div>
                         </div>
                     </div>
-                    <a href="attack-on-titans.html" class="row__img">
+                    <a href="attack-on-titans.php" class="row__img">
                         <img src="img/home/Rectangle 42.png" alt="">
                     </a>
                 </div>

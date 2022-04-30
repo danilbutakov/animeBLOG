@@ -16,7 +16,7 @@
                     Fantasy<span class="info__span">· 1 Month Ago</span>
                 </div>
                 <div class="item__title">
-                    <a href="attack-on-titans.html">
+                    <a href="attack-on-titans.php">
                         <h4>Attack On Titans</h4>
                     </a>
                 </div>
@@ -28,7 +28,7 @@
                         <span>12 Min Read</span>
                     </div>
                     <div class="under__full">
-                        <a href="attack-on-titans.html"><span>Read Full <img src="img/ico/arrow.png" alt=""></span></a>
+                        <a href="attack-on-titans.php"><span>Read Full <img src="img/ico/arrow.png" alt=""></span></a>
                     </div>
                 </div>
             </div>
