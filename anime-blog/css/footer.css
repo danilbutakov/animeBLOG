@@ -224,6 +224,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .footer .footer__down {
+  display: flex;
+  justify-content: space-between;
   font-weight: 400;
   font-size: 16px;
   line-height: 237.5%;
@@ -239,6 +241,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 10px;
     line-height: 200%;
   }
+}
+.footer .footer__down a {
+  color: #FAFAFA;
+  text-decoration: none;
 }
 .footer .inf__par {
   margin: 25px 0 0 0;
