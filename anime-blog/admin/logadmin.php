@@ -9,9 +9,9 @@ $user = $result->fetch_assoc();
 
 if ($user['id'] > 0) {
     $_SESSION['login'] = $user['login'];
-    header("Location: /adminauth.php");
+    //header("Location: /adminauth.php");
 } else {
-    header("Location: /admin.php");
+    //header("Location: /admin.php");
 }
 
 setcookie('user', $user['email'], time() + 3600, "admin/admin.php");
