@@ -21,9 +21,9 @@ session_start();
 
             <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
             <a href="logout.php">Выйти</a><br>
-            <?php $sql = $mysqli->query("SELECT * FROM `new`");
-            $sql->execute();
-            $res2 = $sql->fetch_assoc(); ?>
+            <?php $sql4 = $mysqli4->query("SELECT * FROM `new`");
+            $sql4->execute();
+            $res3 = $sql4->fetch_assoc(); ?>
 
             <form action="" method="post">
                 <input type="text" name="info_genre" value="<?php echo $res->info_genre ?>">
