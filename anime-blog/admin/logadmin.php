@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $login = $_POST['login'];
 $password = $_POST['password'];
 
@@ -8,8 +8,8 @@ $result = $mysqli->query("SELECT * FROM `admin` WHERE `login` = '$login' AND `pa
 $user = $result->fetch_assoc();
 
 if ($user['id'] > 0) {
-    //header("Location: /admin/admin.php");
-
+    $_SESSION['login'] = $user['login'];
+    header("Location: /admin.php");
 } else {
     //header("Location: /admin.php");
 
