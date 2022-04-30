@@ -11,7 +11,7 @@
 
 <body>
     <h2 class="title">Вход в административную панель</h2>
-    <form action="" method="post">
+    <form action="admin/admin.php" method="post">
         <div class="form-group">
             <input type="text" placeholder="Введите логин">
         </div>
