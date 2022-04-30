@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once __DIR__ . '/../php/mysqlauthentication.php';
+print_r($mysqli);
 
 ?>
 <!DOCTYPE html>
