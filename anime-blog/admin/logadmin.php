@@ -12,5 +12,5 @@ if ($user['id'] > 0) {
     header("Location: http://45.144.179.146/admin/adminauth.php");
     die();
 } else {
-    header("Location: http://45.144.179.146/admin.php");
+    //header("Location: http://45.144.179.146/admin.php");
 }
