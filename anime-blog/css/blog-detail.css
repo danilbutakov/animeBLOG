@@ -815,12 +815,10 @@ button#btn2 {
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
-@media (min-width: 767.98px) {
-  button#btn2:hover {
-    background: #ff6464;
-    color: #FAFAFA;
-    transform: scale(1.2);
-  }
+button#btn2:hover {
+  background: #ff6464;
+  color: #FAFAFA;
+  transform: scale(1.2);
 }
 
 button#btn3 {
@@ -832,12 +830,10 @@ button#btn3 {
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
-@media (min-width: 767.98px) {
-  button#btn3:hover {
-    background: #ff6464;
-    color: #FAFAFA;
-    transform: scale(1.2);
-  }
+button#btn3:hover {
+  background: #ff6464;
+  color: #FAFAFA;
+  transform: scale(1.2);
 }
 
 .trend__headline2 {
