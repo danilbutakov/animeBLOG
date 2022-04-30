@@ -1,4 +1,6 @@
 <?php
+
+require_once __DIR__ . '/php/mysqlauthentication.php';
 require_once __DIR__ . '/admin/logadmin.php';
 
 ?>
