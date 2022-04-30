@@ -31,26 +31,7 @@ require_once __DIR__ . '/php/registration.php';
         <?php
         if ($_COOKIE['user'] == '') :
         ?>
-            <header class="header">
-                <div class="header__container _container">
-                    <div class="header__body">
-                        <a href="index.php" class="header__logo">
-                            <img src="img/header/Logo.png" alt="Logo">
-                        </a>
-                        <div class="header__burger">
-                            <span></span>
-                        </div>
-                        <nav class="header__menu">
-                            <ul class="header__list">
-                                <li><a href="index.php" class="header__link">Home</a></li>
-                                <li><a href="" class="header__link">Connect</a></li>
-                                <li><a href="#" class="header__link sign-up" id="open__pop_up">Sign up</a></li>
-                                <li><a href="login.php" class="header__link login _active">Login</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </header>
+            <?php require_once __DIR__ . '/public/header.php'; ?>
             <main class="page">
                 <section class="sign">
                     <div class="sign__content _container-signlog">
@@ -74,41 +55,7 @@ require_once __DIR__ . '/php/registration.php';
             <?php else : ?>
                 <p>Привет <?= $_COOKIE['user'] ?>. Чтобы выйти нажмите <a href="php/exit.php">здесь</a></p>
             <?php endif; ?>
-            <section class="popup" id="pop_up">
-                <div class="popup__container">
-
-                    <div class="popup__body">
-                        <form action="" method="post" class="js-form1" novalidate>
-                            <div class="form2__item">
-                                <label for="" class="form__label">Name</label>
-                                <input type="text" name="name" class="form__input2 js-input1" placeholder="Enter your Name" />
-                            </div>
-                            <div class="form2__item">
-                                <label for="" class="form__label">Email</label>
-                                <input type="email" name="email" class="form__input2 js-input1 js-input-email1" placeholder="Enter your Email" />
-                            </div>
-                            <div class="form2__item">
-                                <label for="" class="form__label__password">Password</label>
-                                <input type="password" name="pass" class="form__input2 js-input1 js-input-password1" placeholder="Enter your Password" />
-                            </div>
-                            <div class="form2__button1">
-                                <button type="submit" name="do_signup" class="button__send1">Sign up</button>
-                            </div>
-                            <div class="form2__button1_close1">
-                                <button type="submit" name="do_signup" class="button__send1">Sign up</button>
-                                <button class="close__pop_up" id="close__pop_up_1">Close</button>
-                            </div>
-                            <?php
-                            if ($_SESSION['message']) {
-                                echo '<div class="form2__msg">' . $_SESSION['message'] . '</div>';
-                            }
-                            unset($_SESSION['message']);
-                            ?>
-                        </form>
-                        <div class="close__popup" id="close__pop_up">&#10006</div>
-                    </div>
-                </div>
-            </section>
+            <?php require_once __DIR__ . '/public/popup.php'; ?>
             </main>
     </div>
     <script src="js/popup.js"></script>
