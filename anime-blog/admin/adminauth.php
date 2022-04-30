@@ -14,7 +14,7 @@ session_start();
 </head>
 
 <body>
-    <div style="text-align: center;">
+    <div style="padding-top: 100px;">
 
         <?php if (!empty($_SESSION['login'])) : ?>
 
