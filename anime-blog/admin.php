@@ -13,10 +13,10 @@
     <h2 class="title">Вход в административную панель</h2>
     <form action="admin/admin.php" method="post">
         <div class="form-group">
-            <input type="text" placeholder="Введите логин">
+            <input type="text" name="login" placeholder="Введите логин">
         </div>
         <div class="form-group">
-            <input type="password" placeholder="Введите пароль">
+            <input type="password" name="password" placeholder="Введите пароль">
         </div>
         <button class="btn">Войти</button>
     </form>
