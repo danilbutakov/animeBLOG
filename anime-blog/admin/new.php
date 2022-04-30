@@ -6,7 +6,9 @@ if (mysqli_connect_errno()) {
     printf('Соединение не установлено');
     exit();
 }
-print_r($mysqli);
+$sql = $pdo->prepare("SELECT * FROM new");
+$sql->execute();
+$res = $sql->fetch(PDO::FETCH_OBJ);
 
 ?>
 <!DOCTYPE html>
@@ -30,9 +32,7 @@ print_r($mysqli);
             <a href="logout.php">Выйти</a>
             <br>
             <?php
-            $sql = $pdo->prepare("SELECT * FROM new");
-            $sql->execute();
-            $res = $sql->fetch(PDO::FETCH_OBJ);
+
             ?>
             <form action="" method="post">
                 <input type="text" name="info_genre" value="" <?php echo $res->info_genre ?>>
