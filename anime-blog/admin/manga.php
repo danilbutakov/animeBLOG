@@ -40,7 +40,7 @@ if (mysqli_connect_errno()) {
                 <input type="submit" value="Сохранить" name="Сохранить">
             </form>
             <br>
-            <img src="/../img/ <?php echo $res->filename ?> width=" 200px">
+            <img src="/../img/ <?php echo $res->filename ?> " width=" 200px">
             <?php
             $head = $_POST['head'];
             $title = $_POST['title'];
