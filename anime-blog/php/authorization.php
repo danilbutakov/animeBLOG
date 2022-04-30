@@ -17,4 +17,4 @@ setcookie('user', $user['email'], time() + 3600, "php/exit.php");
 
 $mysqli->close();
 
-//header('Location: index.php');
+header('Location: php/exit.php');
