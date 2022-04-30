@@ -23,7 +23,9 @@ require_once __DIR__ . '/../php/mysqlauthentication.php';
             <a href="logout.php">Выйти</a><br>
             <?php $sql = $pdo->prepare("SELECT * FROM new");
             $sql->execute();
-            $res = $sql->fetch(PDO::FETCH_OBJ); ?>
+            $res = $sql->fetch(PDO::FETCH_OBJ);
+            print_r($res);
+            ?>
 
             <form action="" method="post">
                 <input type="text" name="info_genre" value="<?php echo $res->info_genre ?>">
