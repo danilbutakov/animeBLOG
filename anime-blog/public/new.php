@@ -3,6 +3,7 @@ require_once __DIR__ . '/php/mysqlauthentication.php';
 $query = $mysqli->query("SELECT * FROM `new`");
 $query->execute();
 $res = $query->fetch_assoc();
+print_r($res);
 ?>
 <section class="new">
     <div class="new__content _container">
