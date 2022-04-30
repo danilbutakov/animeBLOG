@@ -2,7 +2,7 @@
 require_once __DIR__ . '/php/mysqlauthentication.php';
 $query = $mysqli->query("SELECT * FROM `new`");
 $query->execute();
-$res = $query->fetch_assoc();
+$res = $query->fetch(PDO::FETCH_ASSOC);
 print_r($res);
 ?>
 <section class="new">
