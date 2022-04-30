@@ -27,12 +27,9 @@ if (mysqli_connect_errno()) {
             <a href="logout.php">Выйти</a>
             <br>
             <?php
-            $query = $mysqli->query('SELECT * FROM subscribe');
-            $info_genre = $_REQUEST['info_genre'];
-            $info_date = $_REQUEST['info_date'];
-            $title = $_REQUEST['title'];
-            $descr = $_REQUEST['descr'];
-            $read_info = $_REQUEST['read_info'];
+            $sql = $pdo->prepare("SELECT * FROM new");
+            $sql->execute();
+            $res = $sql->fetch(PDO::FETCH_OBJ);
             ?>
             <form action="new.php" method="post">
                 <input type="text" name="info_genre" value="<?php echo $res->info_genre ?>">
@@ -43,7 +40,13 @@ if (mysqli_connect_errno()) {
                 <input type="submit" value="Сохранить">
             </form>
             <?php
-            $row = "UPDATE new SET info_genre=:info_genre, info_date=:info_date, title=:title, descr=:descr, read_info=:read_info";
+            $info_genre = $_REQUEST['info_genre'];
+            $info_date = $_REQUEST['info_date'];
+            $title = $_REQUEST['title'];
+            $descr = $_REQUEST['descr'];
+            $read_info = $_REQUEST['read_info'];
+
+            $row = "UPDATE new SET `info_genre`='info_genre', `info_date`='info_date', `title`='title', `descr`='descr', `read_info`='read_info'";
 
             $query = $pdo->prepare($row);
             $query->execute(['info_genre' => $info_genre, 'info_date' => $info_date, 'title' => $title, 'descr' => $descr, 'read_info' => $read_info]);
