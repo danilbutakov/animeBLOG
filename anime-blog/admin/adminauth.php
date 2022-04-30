@@ -21,7 +21,7 @@ session_start();
             <a href="logout.php">Выйти</a>
         <?php else :
             echo '<h2>Вы что хакер?</h2>';
-            echo '<a href="/">На главную</a>';
+            echo '<a href="/../admin.php">На главную</a>';
         ?>
         <?php endif ?>
     </div>
