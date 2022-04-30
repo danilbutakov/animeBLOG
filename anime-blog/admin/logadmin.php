@@ -11,7 +11,7 @@ if ($user['id'] > 0) {
     $_SESSION['login'] = $user['login'];
     header("Location: /admin.php");
 } else {
-    header("Location: /../admin.php");
+    //header("Location: /../admin.php");
 }
 
 setcookie('user', $user['email'], time() + 3600, "admin/admin.php");
