@@ -2,10 +2,7 @@
 session_start();
 $mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
 
-if (mysqli_connect_errno()) {
-    printf('Соединение не установлено');
-    exit();
-}
+
 $sql = $pdo->prepare("SELECT * FROM new");
 $sql->execute();
 $res = $sql->fetch(PDO::FETCH_OBJ);
