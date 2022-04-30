@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require_once __DIR__ . '/php/mysqlauthentication.php';
 
 $login = $_POST['login'];
@@ -8,13 +8,11 @@ $password = $_POST['password'];
 
 $query = $mysqli->query("SELECT * FROM `admin` WHERE `login` = '$login' AND `password` = '$password'");
 
-$query->execute(array('login' => `login`, 'password' => `passwprd`));
+$user = $result->fetch_assoc();
 
-$array = $query->fetch(PDO::FETCH_ASSOC);
-
-if ($array['id'] > 0) {
-    $_SESSION['login'] = $array['login'];
-    header('Location: /anime-blog/admin/admin.php');
+if (count($user) == 0) {
+    echo "Такой пользователь не найден";
+    exit();
 } else {
-    header('Location: /anime-blog/admin.php');
+    header('Location: /admin.php');
 }
