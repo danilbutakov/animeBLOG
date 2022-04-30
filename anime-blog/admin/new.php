@@ -2,10 +2,6 @@
 session_start();
 $mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
 
-if (mysqli_connect_errno()) {
-    printf('Соединение не установлено', mysqli_error());
-    exit();
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +29,6 @@ if (mysqli_connect_errno()) {
         ?>
         <?php endif ?>
         <?php $sql = $mysqli->query("SELECT * FROM `new`");
-        $sql->execute();
         $res2 = $sql->fetch_assoc(); ?>
         <form action="" method="post">
             <input type="text" name="info_genre" value="<?php echo $res->info_genre ?>">
