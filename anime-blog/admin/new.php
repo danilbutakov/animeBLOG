@@ -26,6 +26,14 @@ if (mysqli_connect_errno()) {
             <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
             <a href="logout.php">Выйти</a>
             <br>
+            <?php
+            $query = $mysqli->query('SELECT * FROM subscribe');
+            $info_genre = $_REQUEST['info_genre'];
+            $info_date = $_REQUEST['info_date'];
+            $title = $_REQUEST['title'];
+            $descr = $_REQUEST['descr'];
+            $read_info = $_REQUEST['read_info'];
+            ?>
             <form action="new.php" method="post">
                 <input type="text" name="info_genre" value="<?php echo $res->info_genre ?>">
                 <input type="text" name="info_date" value="<?php echo $res->info_date ?>">
@@ -35,13 +43,6 @@ if (mysqli_connect_errno()) {
                 <input type="submit" value="Сохранить">
             </form>
             <?php
-            $query = $mysqli->query('SELECT * FROM subscribe');
-            $info_genre = $_REQUEST['info_genre'];
-            $info_date = $_REQUEST['info_date'];
-            $title = $_REQUEST['title'];
-            $descr = $_REQUEST['descr'];
-            $read_info = $_REQUEST['read_info'];
-
             $row = "UPDATE new SET info_genre=:info_genre, info_date=:info_date, title=:title, descr=:descr, read_info=:read_info";
 
             $query = $pdo->prepare($row);
