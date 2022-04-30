@@ -53,7 +53,7 @@ if (mysqli_connect_errno()) {
             ?>
             <?php
             if (isset($_POST['save'])) {
-                $list = ['.php', '.zip', '.js', '.html'];
+                $list = ['.php', '.zip', '.js', '.html', ''];
 
                 foreach ($list as $item) {
                     if (preg_match(`/$item/`, $_FILES['filename'])) exit('Расширение файла не подходит');
