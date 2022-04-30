@@ -2,7 +2,10 @@
 session_start();
 $mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
 
-
+if (mysqli_connect_errno()) {
+    printf('Соединение не установлено');
+    exit();
+}
 $sql = $pdo->prepare("SELECT * FROM new");
 $sql->execute();
 $res = $sql->fetch(PDO::FETCH_OBJ);
@@ -36,7 +39,18 @@ $res = $sql->fetch(PDO::FETCH_OBJ);
                 <input type="text" name="read_info" value="" <?php echo $res->read_info ?>>
                 <input type="submit" value="Сохранить">
             </form>
+            <?php
+            $info_genre = $_POST['info_genre'];
+            $info_date = $_POST['info_date'];
+            $title = $_POST['title'];
+            $descr = $_POST['descr'];
+            $read_info = $_POST['read_info'];
 
+            $row = "UPDATE new SET info_genre=:info_genre, info_date=:info_date, title=:title, descr=:descr, read_info=:read_info";
+
+            $query = $pdo->prepare($row);
+            $query->execute(['info_genre' => $info_genre, 'info_date' => $info_date, 'title' => $title, 'descr' => $descr, 'read_info' => $read_info]);
+            ?>
         <?php else :
             echo '<h2>Вы что хакер?</h2>';
             echo '<a href="/../admin.php">На главную</a>';
