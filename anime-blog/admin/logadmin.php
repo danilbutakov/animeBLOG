@@ -4,11 +4,11 @@ $login = $_POST['login'];
 $password = $_POST['password'];
 
 
-$query = $mysqli->query("SELECT * FROM `admin` WHERE `login` = '$login' AND `password` = '$password'");
+$result = $mysqli->query("SELECT * FROM `admin` WHERE `login` = '$login' AND `password` = '$password'");
 
-$query->execute(array('login' => $login, 'password' => $password));
-$array = $query->fetch(PDO::FETCH_ASSOC);
-print_r($array);
+$user = $result->fetch_assoc();
+
+print_r($user);
 
 // if ($array) {
 //     echo "Такой пользователь не найден";
