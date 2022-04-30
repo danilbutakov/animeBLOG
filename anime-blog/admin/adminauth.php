@@ -17,7 +17,7 @@ session_start();
 
         <?php if (!empty($_SESSION['login'])) : ?>
 
-            <?php echo "Добрый день " . $_SESSION['login']; ?>
+            <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
             <a href="logout.php">Выйти</a>
         <?php else :
             echo '<h2>Вы что хакер?</h2>';
