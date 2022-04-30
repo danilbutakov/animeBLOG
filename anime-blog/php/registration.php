@@ -8,13 +8,13 @@ $pass = $_REQUEST['pass'];
 $pass = md5($pass);
 
 if ($query != '') {
-    $query = "INSERT INTO users VALUES (null, '$name', '$email', '$pass')";
+    $query = "INSERT INTO `users` VALUES (null, '$name', '$email', '$pass')";
 }
 
 if (mysqli_query($mysqli, $query)) {
-    //header('Location: /index.php');
+    header('Location: php/login.php');
 } else {
-    //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
+    echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
 }
 
 
