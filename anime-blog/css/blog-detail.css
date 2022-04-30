@@ -804,21 +804,22 @@ body.lock {
 
 button#btn2 {
   padding: 10px 15px;
-  border: #FAFAFA 2px solid;
+  border: 2px black solid;
+  border-radius: 2px;
   color: #FAFAFA;
-  background: #020202;
+  background: #fafafa;
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
 button#btn2:hover {
-  color: #ff6464;
-  transform: scale(1.2) translateX(8px);
+  background: #ff6464;
+  transform: scale(1.2);
 }
 
 button#btn3 {
   padding: 10px 15px;
   border: 2px black solid;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #FAFAFA;
   background: #fafafa;
   transition: all 0.3s ease 0s;
@@ -826,7 +827,7 @@ button#btn3 {
 }
 button#btn3:hover {
   background: #ff6464;
-  transform: scale(1.2) translateX(8px);
+  transform: scale(1.2);
 }
 
 .trend__headline2 {
