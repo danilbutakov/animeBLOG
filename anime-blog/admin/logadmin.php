@@ -9,7 +9,8 @@ $user = $result->fetch_assoc();
 
 if ($user['id'] > 0) {
     $_SESSION['login'] = $user['login'];
-    //header("Location: /adminauth.php");
+    header("Location: https://www.google.ru/");
+    die();
 } else {
     //header("Location: /admin.php");
 }
