@@ -72,7 +72,7 @@ require_once __DIR__ . '/php/registration.php';
                     </div>
                 </section>
             <?php else : ?>
-                <p>Привет <?= $_COOKIE['user'] ?>. Чтобы выйти нажмите здесь <a href="php/exit.php">здесь</a></p>
+                <p>Привет <?= $_COOKIE['user'] ?>. Чтобы выйти нажмите <a href="php/exit.php">здесь</a></p>
             <?php endif; ?>
             <section class="popup" id="pop_up">
                 <div class="popup__container">
