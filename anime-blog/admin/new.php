@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once __DIR__ . '/../php/mysqlauthentication.php';
+$mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,9 +21,9 @@ require_once __DIR__ . '/../php/mysqlauthentication.php';
 
             <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
             <a href="logout.php">Выйти</a><br>
-            <?php $sql = $mysqli->query("SELECT * FROM `new`");
-            $sql2->execute();
-            $res2 = $sql->fetch_assoc(); ?>
+            <?php $sql = $pdo->prepare("SELECT * FROM `new`");
+            $sql->execute();
+            $res = $sql->fetch(PDO::FETCH_OBJ); ?>
 
             <form action="" method="post">
                 <input type="text" name="info_genre" value="<?php echo $res->info_genre ?>">
