@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once __DIR__ . '/php/mysqlauthentication.php';
 
 $login = $_POST['login'];
@@ -8,14 +8,13 @@ $password = $_POST['password'];
 
 $query = $mysqli->query("SELECT * FROM `admin` WHERE `login` = '$login' AND `password` = '$password'");
 
-$user = $result->fetch_assoc();
+$query->execute(array('login' => `login`, 'password' => `passwprd`));
 
-if (count($user) == 0) {
-    echo "Такой пользователь не найден";
-    exit();
+$array = $query->fetch(PDO::FETCH_ASSOC);
+
+if ($array['id'] > 0) {
+    $_SESSION['login'] = $array['login'];
+    header('Location:/admin.php');
+} else {
+    header('Location:../admin.php');
 }
-
-setcookie('admin', $user['login'], time() + 3600, "admin/exit.php");
-header('Location:admin.php');
-
-$mysqli->close();
