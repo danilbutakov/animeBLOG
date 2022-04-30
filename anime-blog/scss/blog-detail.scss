@@ -154,10 +154,12 @@ button#btn2 {
     background: #fafafa;
     transition: all 0.3s ease 0s;
     cursor: pointer;
-    &:hover {
-        background: #ff6464;
-        color: #FAFAFA;
-        transform: scale(1.2);
+    @media (min-width: $md3) {
+        &:hover {
+            background: #ff6464;
+            color: #FAFAFA;
+            transform: scale(1.2);
+        }
     }
 }
 button#btn3 {
@@ -168,10 +170,12 @@ button#btn3 {
     background: #fafafa;
     transition: all 0.3s ease 0s;
     cursor: pointer;
-    &:hover {
-        background: #ff6464;
-        color: #FAFAFA;
-        transform: scale(1.2);
+    @media (min-width: $md3) {
+        &:hover {
+            background: #ff6464;
+            color: #FAFAFA;
+            transform: scale(1.2);
+        }
     }
 }
 .trend {
