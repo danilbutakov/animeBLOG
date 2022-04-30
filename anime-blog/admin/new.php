@@ -1,10 +1,6 @@
 <?php
-$mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
+require_once __DIR__ . '/../php/mysqlauthentication.php';
 
-if (mysqli_connect_errno()) {
-    printf('Соединение не установлено');
-    exit();
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
