@@ -24,7 +24,7 @@
     <div class="wrapper">
         <?php require_once __DIR__ . '/public/header.php'; ?>
         <main class="page">
-            <?php require_once __DIR__ . '/public/preciew.php'; ?>
+            <?php require_once __DIR__ . '/public/preview.php'; ?>
             <?php require_once __DIR__ . '/public/popup.php'; ?>
             <?php require_once __DIR__ . '/public/desc.php'; ?>
             <?php require_once __DIR__ . '/public/short.php'; ?>
