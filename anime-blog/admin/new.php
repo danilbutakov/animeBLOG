@@ -28,11 +28,11 @@ if (mysqli_connect_errno()) {
             <br>
 
             <form action="" method="post">
-                <input type="text" name="info_genre" value="<?php echo $res->info_genre ?>">
-                <input type="text" name="info_date" value="<?php echo $res->info_date ?>">
-                <input type="text" name="title" value="<?php echo $res->title ?>">
-                <input type="text" name="descr" value="<?php echo $res->descr ?>">
-                <input type="text" name="read_info" value="<?php echo $res->read_info ?>">
+                <input type="text" name="info_genre" value="">
+                <input type="text" name="info_date" value="">
+                <input type="text" name="title" value="">
+                <input type="text" name="descr" value="">
+                <input type="text" name="read_info" value="">
                 <input type="submit" value="Сохранить">
             </form>
 
