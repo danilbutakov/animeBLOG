@@ -14,7 +14,7 @@ $array = $query->fetch(PDO::FETCH_ASSOC);
 
 if ($array['id'] > 0) {
     $_SESSION['login'] = $array['login'];
-    header('Location:/admin.php');
+    header('Location:/logadmin.php');
 } else {
     header('Location:/anime-blog/admin.php');
 }
