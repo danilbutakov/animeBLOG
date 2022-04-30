@@ -9,7 +9,7 @@
         </div>
         <div class="new__slider">
             <div class="slider__item">
-                <a href="attack-on-titans.html" class="item__link">
+                <a href="attack-on-titans.php" class="item__link">
                     <img src="img/home/Rectangle 42-1.png" alt="">
                 </a>
                 <div class="item__info">
