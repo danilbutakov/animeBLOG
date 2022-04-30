@@ -2,22 +2,19 @@
     <div class="blog__container _container">
         <h3 class="blog__title title">Blog</h3>
         <div class="blog__categorys">
-            <a href="">
-                <h3 class="categorys__title">comedy</h3>
-            </a>
-            <a href="">
+            <a href="#">
                 <h3 class="categorys__title">fantasy</h3>
             </a>
-            <a href="">
+            <a href="#">
                 <h3 class="categorys__title">drama</h3>
             </a>
-            <a href="">
+            <a href="#">
                 <h3 class="categorys__title">action</h3>
             </a>
-            <a href="">
+            <a href="#">
                 <h3 class="categorys__title">history</h3>
             </a>
-            <a href="">
+            <a href="#">
                 <h3 class="categorys__title">military</h3>
             </a>
         </div>
@@ -27,14 +24,14 @@
                 <div class="fantasy__items">
                     <div class="items__big">
                         <div class="big__item">
-                            <a href="attack-on-titans.html" class="item__link">
+                            <a href="attack-on-titans.php" class="item__link">
                                 <img src="img/home/Rectangle 42-2.png" alt="">
                             </a>
                             <div class="item__info">
                                 <span>1 Month Ago</span>
                             </div>
                             <div class="item__title">
-                                <a href="attack-on-titans.html">
+                                <a href="attack-on-titans.php">
                                     <h4>Attack On Titans</h4>
                                 </a>
                             </div>
@@ -43,7 +40,7 @@
                             </div>
                             <div class="item__under under">
                                 <div class="under__full">
-                                    <a href="attack-on-titans.html"><span>Load more<img src="img/ico/arrow.png" alt=""></span></a>
+                                    <a href="attack-on-titans.php"><span>Load more<img src="img/ico/arrow.png" alt=""></span></a>
                                 </div>
                             </div>
                         </div>
