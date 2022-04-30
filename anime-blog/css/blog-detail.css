@@ -814,7 +814,7 @@ button#btn2 {
 button#btn2:hover {
   background: #ff6464;
   color: #FAFAFA;
-  transform: scale(0.7);
+  transform: scale(1.2);
 }
 
 button#btn3 {
@@ -829,7 +829,7 @@ button#btn3 {
 button#btn3:hover {
   background: #ff6464;
   color: #FAFAFA;
-  transform: scale(0.7);
+  transform: scale(1.2);
 }
 
 .trend__headline2 {
