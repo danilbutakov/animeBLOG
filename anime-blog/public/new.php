@@ -1,8 +1,5 @@
 <?php
 
-$query = $mysqli->query("SELECT * FROM new");
-$query->execute();
-$res = $query->fetch_assoc();
 ?>
 <section class="new">
     <div class="new__content _container">
