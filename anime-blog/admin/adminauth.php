@@ -22,7 +22,7 @@ session_start();
             <a href="logout.php" style="margin-top: 10px;">Выйти</a><br>
             <a href="new.php">New</a>
             <a href="#">Trending</a>
-            <a href="#">Manga</a>
+            <a href="manga.php">Manga</a>
         <?php else :
             echo '<h2>Вы что хакер?</h2>';
             echo '<a href="/../admin.php">На главную</a>';
