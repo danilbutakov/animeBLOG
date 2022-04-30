@@ -18,4 +18,14 @@ function readMore() {
         btn.innerHTML="Скрыть";
         more.style.display="inline";
     }
+
+    if(dots2.style.display === "none") {
+        dots2.style.display="inline";
+        btn2.innerHTML="Подробнее";
+        more2.style.display="none";
+    } else {
+        dots2.style.display="none";
+        btn2.innerHTML="Скрыть";
+        more2.style.display="inline";
+    }
 }
