@@ -8,11 +8,13 @@ $password = $_POST['password'];
 
 $query = $mysqli->query("SELECT * FROM `admin` WHERE `login` = '$login' AND `password` = '$password'");
 
-$user = $result->fetch_assoc();
+$query->execute(array('login' => $login, 'password' => $password));
+$array = $query->fetch(PDO::FETCH_ASSOC);
+print_r($array);
 
-if (count($user) == 0) {
-    echo "Такой пользователь не найден";
-    exit();
-} else {
-    header('Location: /admin.php');
-}
+// if ($array) {
+//     echo "Такой пользователь не найден";
+//     exit();
+// } else {
+//     header('Location: /admin.php');
+// }
