@@ -40,11 +40,11 @@ if (mysqli_connect_errno()) {
                 <input type="submit" value="Сохранить">
             </form>
             <?php
-            $info_genre = $_REQUEST['info_genre'];
-            $info_date = $_REQUEST['info_date'];
-            $title = $_REQUEST['title'];
-            $descr = $_REQUEST['descr'];
-            $read_info = $_REQUEST['read_info'];
+            $info_genre = $_POST['info_genre'];
+            $info_date = $_POST['info_date'];
+            $title = $_POST['title'];
+            $descr = $_POST['descr'];
+            $read_info = $_POST['read_info'];
 
             $row = "UPDATE new SET info_genre=:info_genre, info_date=:info_date, title=:title, descr=:descr, read_info=:read_info";
 
