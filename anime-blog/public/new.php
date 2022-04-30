@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/php/mysqlauthentication.php';
+
 $query = $mysqli->query("SELECT * FROM new");
 $query->execute();
 $res = $query->fetch_assoc();
