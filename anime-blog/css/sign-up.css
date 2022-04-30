@@ -596,8 +596,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer .footer__down a {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 200%;
+  font-size: 16px;
+  line-height: 190%;
   color: #FAFAFA;
   text-decoration: none;
 }
