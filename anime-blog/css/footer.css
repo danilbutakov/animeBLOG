@@ -243,6 +243,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .footer .footer__down a {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 200%;
   color: #FAFAFA;
   text-decoration: none;
 }
