@@ -25,7 +25,7 @@ if (mysqli_connect_errno()) {
         <?php if (!empty($_SESSION['login'])) : ?>
 
             <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
-            <a href="logout.php">Выйти</a>
+            <a href="adminauth.php">Выйти</a>
             <br>
             <?php $query = $pdo->prepare("SELECT * FROM new");
             $query->execute();
