@@ -27,7 +27,7 @@ if (mysqli_connect_errno()) {
             <a href="logout.php">Выйти</a>
             <br>
 
-            <form action="new.php" method="post">
+            <form action="" method="post">
                 <input type="text" name="info_genre" value="<?php echo $res->info_genre ?>">
                 <input type="text" name="info_date" value="<?php echo $res->info_date ?>">
                 <input type="text" name="title" value="<?php echo $res->title ?>">
