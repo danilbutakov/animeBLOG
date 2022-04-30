@@ -806,13 +806,14 @@ button#btn2 {
   padding: 10px 15px;
   border: 2px black solid;
   border-radius: 2px;
-  color: #FAFAFA;
+  color: black;
   background: #fafafa;
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
 button#btn2:hover {
   background: #ff6464;
+  color: #FAFAFA;
   transform: scale(1.2);
 }
 
@@ -820,13 +821,14 @@ button#btn3 {
   padding: 10px 15px;
   border: 2px black solid;
   border-radius: 2px;
-  color: #FAFAFA;
+  color: black;
   background: #fafafa;
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
 button#btn3:hover {
   background: #ff6464;
+  color: #FAFAFA;
   transform: scale(1.2);
 }
 
