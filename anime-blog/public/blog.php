@@ -112,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            <?php require_once __DIR__ . '/public/manga.php'; ?>
+            <?php require_once __DIR__ . '/manga.php'; ?>
         </div>
     </div>
 </section>
