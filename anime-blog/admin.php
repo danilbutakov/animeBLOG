@@ -25,8 +25,8 @@ require_once __DIR__ . '/admin/logadmin.php';
             <input type="password" name="password" placeholder="Введите пароль">
         </div>
         <button class="btn">Войти</button>
-        <a href="index.php"><button class="btn">Выйти из админки</button></a>
     </form>
+    <a href="index.php"><button class="btn">Выйти из админки</button></a>
 </body>
 
 </html>
