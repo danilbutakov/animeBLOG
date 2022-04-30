@@ -16,5 +16,5 @@ if ($array['id'] > 0) {
     $_SESSION['login'] = $array['login'];
     header('Location:/admin.php');
 } else {
-    header('Location:../admin.php');
+    header('Location:/anime-blog/admin.php');
 }
