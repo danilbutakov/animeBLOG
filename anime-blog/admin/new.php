@@ -27,7 +27,9 @@ if (mysqli_connect_errno()) {
             <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
             <a href="logout.php">Выйти</a>
             <br>
-
+            <?php $query = $pdo->prepare("SELECT * FROM new");
+            $query->execute();
+            $res = $query->fetch(PDO::FETCH_OBJ); ?>
             <form action="" method="post">
                 <input type="text" name="info_genre" value="" <?php echo $res->info_genre ?>>
                 <input type="text" name="info_date" value="" <?php echo $res->info_date ?>>
