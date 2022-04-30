@@ -31,16 +31,28 @@ if (mysqli_connect_errno()) {
             $sql = $pdo->prepare("SELECT * FROM new");
             $sql->execute();
             $res = $sql->fetch(PDO::FETCH_OBJ);
-            print_r($res);
             ?>
 
-            <form action="" method="post">
+            <form action="new.php" method="post">
                 <input type="text" name="info_genre" value="<?php echo $res->info_genre ?>">
                 <input type="text" name="info_date" value="<?php echo $res->info_date ?>">
                 <input type="text" name="title" value="<?php echo $res->title ?>">
-                <input type="text" name="description" value="<?php echo $res->description ?>">
+                <input type="text" name="descr" value="<?php echo $res->descr ?>">
                 <input type="text" name="read_info" value="<?php echo $res->read_info ?>">
+                <input type="submit" value="Сохранить">
             </form>
+            <?php
+            $info_genre = $_POST['info_genre'];
+            $info_date = $_POST['info_date'];
+            $title = $_POST['title'];
+            $descr = $_POST['descr'];
+            $read_info = $_POST['read_info'];
+
+            $row = "UPDATE new SET info_genre=:info_genre, info_date=:info_date, title=:title, descr=:descr, read_info=:read_info";
+
+            $query = $pdo->prepare($row);
+            $query->execute(['info_genre' => $info_genre, 'info_date' => $info_date, 'title' => $title, 'descr' => $descr, 'read_info' => $read_info]);
+            ?>
         <?php else :
             echo '<h2>Вы что хакер?</h2>';
             echo '<a href="/../admin.php">На главную</a>';
