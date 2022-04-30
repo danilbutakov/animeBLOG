@@ -1,5 +1,4 @@
 <?php
-session_start();
 $mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
 
 if (mysqli_connect_errno()) {
@@ -28,9 +27,17 @@ if (mysqli_connect_errno()) {
             <a href="logout.php">Выйти</a>
             <br>
             <?php
-            $sql = $pdo->prepare("SELECT * FROM new");
-            $sql->execute();
-            $res = $sql->fetch(PDO::FETCH_OBJ);
+            $query = $mysqli->query('SELECT * FROM subscribe');
+            $info_genre = $_REQUEST['info_genre'];
+            $info_date = $_REQUEST['info_date'];
+            $title = $_REQUEST['title'];
+            $descr = $_REQUEST['descr'];
+            $read_info = $_REQUEST['read_info'];
+
+            $row = "UPDATE new SET info_genre=:info_genre, info_date=:info_date, title=:title, descr=:descr, read_info=:read_info";
+
+            $query = $pdo->prepare($row);
+            $query->execute(['info_genre' => $info_genre, 'info_date' => $info_date, 'title' => $title, 'descr' => $descr, 'read_info' => $read_info]);
             ?>
 
             <form action="new.php" method="post">
@@ -41,18 +48,6 @@ if (mysqli_connect_errno()) {
                 <input type="text" name="read_info" value="<?php echo $res->read_info ?>">
                 <input type="submit" value="Сохранить">
             </form>
-            <?php
-            $info_genre = $_POST['info_genre'];
-            $info_date = $_POST['info_date'];
-            $title = $_POST['title'];
-            $descr = $_POST['descr'];
-            $read_info = $_POST['read_info'];
-
-            $row = "UPDATE new SET info_genre=:info_genre, info_date=:info_date, title=:title, descr=:descr, read_info=:read_info";
-
-            $query = $pdo->prepare($row);
-            $query->execute(['info_genre' => $info_genre, 'info_date' => $info_date, 'title' => $title, 'descr' => $descr, 'read_info' => $read_info]);
-            ?>
         <?php else :
             echo '<h2>Вы что хакер?</h2>';
             echo '<a href="/../admin.php">На главную</a>';
