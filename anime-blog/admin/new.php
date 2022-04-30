@@ -15,7 +15,7 @@ session_start();
 </head>
 
 <body>
-    <div style="text-align: center;">
+    <div>
         <h1>Редактирование контактной информации</h1>
         <?php if (!empty($_SESSION['login'])) : ?>
 
