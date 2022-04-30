@@ -15,7 +15,7 @@ session_start();
 <body>
     <div style="text-align: center;">
         <?php echo "Добрый день " . $_SESSION['login']; ?>
-        <a href="/logout.php">Выйти</a>
+        <a href="admin/logout.php">Выйти</a>
     </div>
 </body>
 
