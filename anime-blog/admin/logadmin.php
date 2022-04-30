@@ -8,10 +8,9 @@ $result = $mysqli->query("SELECT * FROM `admin` WHERE `login` = '$login' AND `pa
 $user = $result->fetch_assoc();
 
 if ($user['id'] > 0) {
+    $_SESSION['login'] = $user['login'];
     header("Location: http://45.144.179.146/admin/adminauth.php");
     die();
 } else {
     header("Location: http://45.144.179.146/admin.php");
 }
-
-setcookie('admin', $user['login'], time() + 3600, "/");

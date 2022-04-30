@@ -1,3 +1,3 @@
 <?php
-setcookie('admin', $user['login'], time() - 3600, "/");
+session_start();
 echo "Вы в админке";
