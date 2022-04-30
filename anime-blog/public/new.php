@@ -14,12 +14,12 @@ $res = $query->fetch_assoc();
                         <img src="img/home/Rectangle 39.png" alt="">
                     </a>
                     <div class="row__item">
-                        <div class="row__info"><?php echo $res['info_genre'] ?> <span>· <?php echo $res['info_date'] ?></span></div>
-                        <div class="row__title"><a href=""><?php echo $res['title'] ?></a></div>
-                        <div class="row__text"><?php echo $res['description'] ?></div>
+                        <div class="row__info"><?php echo $res["info_genre"] ?> <span>· <?php echo $res["info_date"] ?></span></div>
+                        <div class="row__title"><a href=""><?php echo $res["title"] ?></a></div>
+                        <div class="row__text"><?php echo $res["description"] ?></div>
                         <div class="row__under under">
                             <div class="under__read">
-                                <span><?php echo $res['read_info'] ?></span>
+                                <span><?php echo $res["read_info"] ?></span>
                             </div>
                             <div class="under__full">
                                 <a href="attack-on-titans.php"><span>Read Full <img src="img/ico/arrow.png" alt=""></span></a>
