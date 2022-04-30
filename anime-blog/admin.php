@@ -1,3 +1,7 @@
+<?php
+require_once __DIR__ . '/admin/logadmin.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +15,7 @@
 
 <body>
     <h2 class="title">Вход в административную панель</h2>
-    <form action="admin/logadmin.php" method="post">
+    <form action="" method="post">
         <div class="form-group">
             <input type="text" name="login" placeholder="Введите логин">
         </div>
