@@ -7,11 +7,11 @@ function readMore() {
 
     if(dots.style.display === "none") {
         dots.style.display="inline";
-        btn.innerHTML="Скрыть";
+        btn.innerHTML="Подробнее";
         more.style.display="none";
     } else {
         dots.style.display="none";
-        btn.innerHTML="Подробнее";
+        btn.innerHTML="Скрыть";
         more.style.display="inline";
     }
 }
