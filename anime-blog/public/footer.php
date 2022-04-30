@@ -15,6 +15,7 @@
         </div>
         <div class="footer__down">
             <span>@copyright 2021 Gates</span>
+            <a href="/../admin.php">Админка</a>
         </div>
     </div>
 </footer>
