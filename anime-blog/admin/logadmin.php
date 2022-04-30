@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once __DIR__ . '/php/mysqlauthentication.php';
 $login = $_POST['login'];
 $password = $_POST['password'];
 
