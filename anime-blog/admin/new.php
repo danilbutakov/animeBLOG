@@ -46,7 +46,7 @@ if (mysqli_connect_errno()) {
             $descr = $_REQUEST['descr'];
             $read_info = $_REQUEST['read_info'];
 
-            $row = "UPDATE new SET `info_genre`='info_genre', `info_date`='info_date', `title`='title', `descr`='descr', `read_info`='read_info'";
+            $row = "UPDATE new SET info_genre=:info_genre, info_date=:info_date, title=:title, descr=:descr, read_info=:read_info";
 
             $query = $pdo->prepare($row);
             $query->execute(['info_genre' => $info_genre, 'info_date' => $info_date, 'title' => $title, 'descr' => $descr, 'read_info' => $read_info]);
