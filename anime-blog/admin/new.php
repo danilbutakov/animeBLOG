@@ -31,9 +31,6 @@ $res = $sql->fetch(PDO::FETCH_OBJ);
             <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
             <a href="logout.php">Выйти</a>
             <br>
-            <?php
-
-            ?>
             <form action="" method="post">
                 <input type="text" name="info_genre" value="" <?php echo $res->info_genre ?>>
                 <input type="text" name="info_date" value="" <?php echo $res->info_date ?>>
