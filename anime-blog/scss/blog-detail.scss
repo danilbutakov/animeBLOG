@@ -160,14 +160,14 @@ button#btn2 {
 }
 button#btn3 {
     padding: 10px 15px;
-    border: #FAFAFA 2px solid;
+    border: 2px black solid;
     border-radius: 5px;
     color: #FAFAFA;
-    background-color: #020202;
+    background: #fafafa;
     transition: all 0.3s ease 0s;
     cursor: pointer;
     &:hover {
-        background-color: #ff6464;
+        background: #ff6464;
         transform: scale(1.2) translateX(8px);
     }
 }
