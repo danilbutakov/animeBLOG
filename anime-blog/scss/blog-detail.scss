@@ -146,6 +146,20 @@ body.lock {
 #more {
     display: none;
 }
+button#btn2 {
+    padding: 10px 15px;
+    border: #FAFAFA 2px solid;
+    color: #FAFAFA;
+    background: #020202;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.2) translateX(8px);
+    }
+}
+button#btn3 {
+    
+}
 .trend {
 
     &__headline2 {
