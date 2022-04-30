@@ -820,12 +820,12 @@ button#btn3 {
   border: #FAFAFA 2px solid;
   border-radius: 5px;
   color: #FAFAFA;
-  background: #020202;
+  background-color: #020202;
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
 button#btn3:hover {
-  color: #ff6464;
+  background-color: #ff6464;
   transform: scale(1.2) translateX(8px);
 }
 
