@@ -6,10 +6,6 @@ if (mysqli_connect_errno()) {
     printf('Соединение не установлено');
     exit();
 }
-$sql = $pdo->prepare("SELECT * FROM new");
-$sql->execute();
-$res = $sql->fetch(PDO::FETCH_OBJ);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,6 +27,9 @@ $res = $sql->fetch(PDO::FETCH_OBJ);
             <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
             <a href="logout.php">Выйти</a>
             <br>
+            <?php$sql = $pdo->prepare("SELECT * FROM new");
+            $sql->execute();
+            $res = $sql->fetch(PDO::FETCH_OBJ);?>
             <form action="" method="post">
                 <input type="text" name="info_genre" value="" <?php echo $res->info_genre ?>>
                 <input type="text" name="info_date" value="" <?php echo $res->info_date ?>>
