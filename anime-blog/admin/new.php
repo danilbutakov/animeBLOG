@@ -22,7 +22,7 @@ require_once __DIR__ . '/../php/mysqlauthentication.php';
             <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
             <a href="logout.php">Выйти</a><br>
             <?php $sql = $mysqli->query("SELECT * FROM `new`");
-            $sql->execute();
+            $sql2->execute();
             $res2 = $sql->fetch_assoc(); ?>
 
             <form action="" method="post">
