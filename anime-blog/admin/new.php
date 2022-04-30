@@ -1,6 +1,6 @@
 <?php
 session_start();
-$mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
+require_once __DIR__ . '/../php/mysqlauthentication.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
