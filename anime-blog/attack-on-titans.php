@@ -33,6 +33,7 @@
         <?php require_once __DIR__ . '/public/footer.php'; ?>
     </div>
     <script src="js/popup.js"></script>
+    <script src="js/more.js"></script>
 </body>
 <script src="js/formIndex1.js"></script>
 

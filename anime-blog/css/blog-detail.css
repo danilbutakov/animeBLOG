@@ -798,6 +798,10 @@ body.lock {
   }
 }
 
+#more {
+  display: none;
+}
+
 .trend__headline2 {
   border-top: 1px solid #D6D6D6;
   border-radius: 5px;
