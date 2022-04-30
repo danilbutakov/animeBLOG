@@ -40,17 +40,34 @@ if (mysqli_connect_errno()) {
                 <input type="submit" value="Сохранить" name="Сохранить">
             </form>
             <br>
-            <img src="/../img/home/akame-small (2).png" alt=""><?php echo $res->filename ?>
+            <img src="/../img/ <?php echo $res->filename ?> width: " 200px"">
             <?php
             $head = $_POST['head'];
             $title = $_POST['title'];
             $info = $_POST['info'];
-            $filename = $_POST['filename'];
 
             $row = "UPDATE new SET info_genre=:info_genre, info_date=:info_date, title=:title, descr=:descr, read_info=:read_info";
 
             $query = $pdo->prepare($row);
-            $query->execute(['info_genre' => $info_genre, 'info_date' => $info_date, 'title' => $title, 'descr' => $descr, 'read_info' => $read_info]);
+            $query->execute(['head' => $head, 'info_date' => $info_date, 'title' => $title, 'info' => [$info], 'filename' => $_FILES['filename']['name']]);
+            ?>
+            <?php
+            if (isset($_POST['save'])) {
+                $list = ['.php', '.zip', '.js', '.html'];
+
+                foreach ($list as $item) {
+                    if (preg_match(`/$item/`, $_FILES['filename'])) exit('Расширение файла не подходит');
+                }
+                $type = getimagesize($_FILES['filename']['tmp_name']);
+                if ($type && ($type['mime'] != '/../img/' || $type['mime'] != '/../img/' || $type['mime'] != '/../img/')) {
+                    if ($_FILES['filename']['name'] < 1024 * 1000) {
+                        $upload = '/../img/' . $_FILES['filename']['name'];
+
+                        if (move_uploaded_file($_FILES['filesname']['tmp_name'], $upload)) echo "Файл загружен";
+                        else echo "Ошибка при загрузке";
+                    } else exit("Размер файла превышен");
+                }
+            } else exit("Тип файла не подходит");
             ?>
         <?php else :
             echo '<h2>Вы что хакер?</h2>';
