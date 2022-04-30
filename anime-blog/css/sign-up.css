@@ -578,6 +578,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer .footer__down {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 237.5%;
@@ -597,6 +598,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer .footer__down a {
   font-weight: 400;
   font-size: 16px;
+  letter-spacing: 0.677419px;
   line-height: 190%;
   color: #FAFAFA;
   text-decoration: none;
