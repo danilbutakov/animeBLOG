@@ -803,9 +803,9 @@ body.lock {
 }
 
 button#btn2 {
-  padding: 10px 15px;
+  padding: 5px 10px;
   border: 2px black solid;
-  border-radius: 2px;
+  border-radius: 5px;
   color: black;
   background: #fafafa;
   transition: all 0.3s ease 0s;
@@ -818,9 +818,9 @@ button#btn2:hover {
 }
 
 button#btn3 {
-  padding: 10px 15px;
+  padding: 5px 10px;
   border: 2px black solid;
-  border-radius: 2px;
+  border-radius: 5px;
   color: black;
   background: #fafafa;
   transition: all 0.3s ease 0s;
