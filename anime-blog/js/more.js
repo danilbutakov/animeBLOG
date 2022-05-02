@@ -11,21 +11,21 @@ function readMore() {
 
     if(dots.style.display === "none") {
         dots.style.display="inline";
-        btn.innerHTML="Подробнее";
+        btn.innerHTML="More";
         more.style.display="none";
     } else {
         dots.style.display="none";
-        btn.innerHTML="Скрыть";
+        btn.innerHTML="Hide";
         more.style.display="inline";
     }
 
     if(dots2.style.display === "none") {
         dots2.style.display="inline";
-        btn2.innerHTML="Подробнее";
+        btn2.innerHTML="More";
         more2.style.display="none";
     } else {
         dots2.style.display="none";
-        btn2.innerHTML="Скрыть";
+        btn2.innerHTML="Hide";
         more2.style.display="inline";
     }
 }
