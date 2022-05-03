@@ -27,28 +27,52 @@ if (mysqli_connect_errno()) {
             <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
             <a href="adminauth.php">Выйти</a>
             <br>
-            <?php $query = $pdo->prepare("SELECT * FROM new");
-            $query->execute();
-            $res = $query->fetch(PDO::FETCH_OBJ); ?>
+           <?php
+$query="SELECT * FROM new";
+       	$row = mysqli_query($mysqli, $query);
+	foreach ($row as $rows) {
+
+	}
+	?>
             <form action="" method="post">
-                <input type="text" name="info_genre" value="" <?php echo $res->info_genre ?>>
-                <input type="text" name="info_date" value="" <?php echo $res->info_date ?>>
-                <input type="text" name="title" value="" <?php echo $res->title ?>>
-                <input type="text" name="descr" value="" <?php echo $res->descr ?>>
-                <input type="text" name="read_info" value="" <?php echo $res->read_info ?>>
+                <input type="text" name="info_genre" placeholder="<?= $rows['info_genre'];?>">
+                <input type="text" name="info_date" placeholder="<?= $rows['info_date'];?>">
+                <input type="text" name="title" placeholder="<?= $rows['title'];?>">
+                <input type="text" name="descr" placeholder="<?= $rows['descr'];?>">
+                <input type="text" name="read_info" placeholder="<?= $rows['read_info'];?>">
                 <input type="submit" value="Сохранить">
             </form>
             <?php
-            $info_genre = $_POST['info_genre'];
-            $info_date = $_POST['info_date'];
-            $title = $_POST['title'];
-            $descr = $_POST['descr'];
-            $read_info = $_POST['read_info'];
 
-            $row = "UPDATE new SET info_genre=:info_genre, info_date=:info_date, title=:title, descr=:descr, read_info=:read_info";
-
-            $query = $pdo->prepare($row);
-            $query->execute(['info_genre' => $info_genre, 'info_date' => $info_date, 'title' => $title, 'descr' => $descr, 'read_info' => $read_info]);
+           if($_POST['info_genre']!= '') {
+		$info_genre = $_POST['info_genre'];
+	} else{
+		$info_genre = $rows['info_genre'];
+	}
+           if($_POST['info_date']!= '') {
+		$info_date = $_POST['info_date'];
+	} else {
+		$info_date = $rows['info_date'];
+	}
+	 if($_POST['title']!= '') {
+                 $title = $_POST['title'];
+        } else {
+                 $title = $rows['title'];
+        }
+           if($_POST['descr']!= '') {
+		 $descr = $_POST['descr']; 
+	} else {
+		 $descr = $rows['descr']; 
+	}
+	if($_POST['info_read']!= '') { 
+		$read_info = $_POST['read_info'];
+	} else {
+		 $read_info = $rows['read_info']; 
+	}
+		 if(isset($info_genre, $info_date, $title, $descr, $read_info)){
+            $row = "UPDATE new SET info_genre='$info_genre', info_date='$info_date', title='$title', descr='$descr', read_info='$read_info' WHERE id=1";
+		$mysqli->query($row);
+		} 
             ?>
         <?php else :
             echo '<h2>Вы что хакер?</h2>';

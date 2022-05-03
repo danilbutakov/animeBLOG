@@ -1,4 +1,16 @@
 <?php
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
+//	include_once  '../php/mysqlauthentication.php';
+?>
+
+<?php
+	$qur="SELECT * FROM new;";
+	$result = $conn->query("SELECT * FROM new");
+	$res = mysqli_fetch_assoc($row);
+	foreach ($result as $rows){
+	
+}
 ?>
 <section class="new">
     <div class="new__content _container">
@@ -10,7 +22,7 @@
                         <img src="img/home/Rectangle 39.png" alt="">
                     </a>
                     <div class="row__item">
-                        <div class="row__info"> <span>· 1 Month Ago</span></div>
+                        <div class="row__info"><span><?= $rows['info_genre'];?></span> <span>· <?= $rows['info_date']; ?></span></div>
                         <div class="row__title"><a href="">Akame Ga Kill: Season finale</a></div>
                         <div class="row__text">The CSS Grid Layout Module offers a <br> grid-based layout system, with rows and <br> columns, making it easier to design web pages <br> without having to use floats and positioning.</div>
                         <div class="row__under under">

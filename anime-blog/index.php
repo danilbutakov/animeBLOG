@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/php/mysqlauthentication.php';
+include_once 'php/mysqlauthentication.php';
 
 require_once __DIR__ . '/php/subscribe.php';
 
