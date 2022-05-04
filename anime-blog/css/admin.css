@@ -52,3 +52,7 @@ body .btn {
   text-align: center;
   color: black;
 }
+
+.admin input {
+  margin-bottom: 15px;
+}

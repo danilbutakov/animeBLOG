@@ -24,16 +24,14 @@ if (mysqli_connect_errno()) {
         <h1>Редактирование контактной информации</h1>
         <?php if (!empty($_SESSION['login'])) : ?>
 
-            <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
-            <a href="adminauth.php">Выйти</a>
-            <br>
+            <div class="hello"><?php echo "Добрый день, " . $_SESSION['login']; ?><br></div>
             <?php
             $query = "SELECT * FROM new";
             $row = mysqli_query($mysqli, $query);
             foreach ($row as $rows) {
             }
             ?>
-            <form action="" method="post">
+            <form action="" method="post" class="admin">
                 <input type="text" name="info_genre" placeholder="<?= $rows['info_genre']; ?>">
                 <input type="text" name="info_date" placeholder="<?= $rows['info_date']; ?>">
                 <input type="text" name="title" placeholder="<?= $rows['title']; ?>">
