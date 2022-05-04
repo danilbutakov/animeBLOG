@@ -56,7 +56,7 @@ if (mysqli_connect_errno()) {
                 $info = $rows['info'];
             }
             if (isset($head, $title, $info)) {
-                $row = "UPDATE manga SET head='$head', title='$title', info='info' WHERE id=1";
+                $row = "UPDATE manga SET head='$head', title='$title', info='$info' WHERE id=1";
                 $mysqli->query($row);
             }
             ?>
