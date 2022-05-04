@@ -24,50 +24,41 @@ if (mysqli_connect_errno()) {
         <h1>Редактирование информации о манге</h1>
         <?php if (!empty($_SESSION['login'])) : ?>
 
-            <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
-            <a href="adminauth.php">Выйти</a>
-            <br>
-            <?php $query = $pdo->prepare("SELECT * FROM manga");
-            $query->execute();
-            $res = $query->fetch(PDO::FETCH_OBJ); ?>
-            <form action="manga.php" method="post" enctype="multipart/form-data">
-                <input type="text" name="head" value="" <?php echo $res->head ?>>
-                <input type="text" name="title" value="" <?php echo $res->title ?>>
-                <input type="text" name="info" value="" <?php echo $res->info ?>>
-                <p>
-                    <input type="file" name="filename" value="">
-                </p>
-                <input type="submit" value="Сохранить" name="Сохранить">
-            </form>
-            <br>
-            <img src="/../img/ <?php echo $res->filename ?> " width=" 200px">
+            <div class="hello"><?php echo "Добрый день, " . $_SESSION['login']; ?><br></div>
+            <div class="logout"><a href="adminauth.php" style="padding: 10px 0px;">Выйти</a><br></div>
             <?php
-            $head = $_POST['head'];
-            $title = $_POST['title'];
-            $info = $_POST['info'];
-
-            $row = "UPDATE new SET info_genre=:info_genre, info_date=:info_date, title=:title, descr=:descr, read_info=:read_info";
-
-            $query = $pdo->prepare($row);
-            $query->execute(['head' => $head, 'info_date' => $info_date, 'title' => $title, 'info' => [$info], 'filename' => $_FILES['filename']['name']]);
+            $query = "SELECT * FROM manga";
+            $row = mysqli_query($mysqli, $query);
+            foreach ($row as $rows) {
+            }
             ?>
+            <form action="" method="post" class="admin">
+                <input type="text" name="head" placeholder="<?= $rows['head']; ?>">
+                <input type="text" name="title" placeholder="<?= $rows['title']; ?>">
+                <input type="text" name="info" placeholder="<?= $rows['info']; ?>">
+                <input type="submit" value="Сохранить">
+            </form>
             <?php
-            if (isset($_POST['save'])) {
-                $list = ['.php', '.zip', '.js', '.html', ''];
 
-                foreach ($list as $item) {
-                    if (preg_match(`/$item/`, $_FILES['filename'])) exit('Расширение файла не подходит');
-                }
-                $type = getimagesize($_FILES['filename']['tmp_name']);
-                if ($type && ($type['mime'] != '/../img/' || $type['mime'] != '/../img/' || $type['mime'] != '/../img/')) {
-                    if ($_FILES['filename']['name'] < 1024 * 1000) {
-                        $upload = '/../img/' . $_FILES['filename']['name'];
-
-                        if (move_uploaded_file($_FILES['filesname']['tmp_name'], $upload)) echo "Файл загружен";
-                        else echo "Ошибка при загрузке";
-                    } else exit("Размер файла превышен");
-                }
-            } else exit("Тип файла не подходит");
+            if ($_POST['head'] != '') {
+                $head = $_POST['head'];
+            } else {
+                $head = $rows['head'];
+            }
+            if ($_POST['title'] != '') {
+                $title = $_POST['title'];
+            } else {
+                $title = $rows['title'];
+            }
+            if ($_POST['info'] != '') {
+                $info = $_POST['info'];
+            } else {
+                $info = $rows['info'];
+            }
+            if (isset($head, $title, $info)) {
+                $row = "UPDATE manga SET head='$head', title='$title', info='info' WHERE id=1";
+                $mysqli->query($row);
+            }
             ?>
         <?php else :
             echo '<h2>Вы что хакер?</h2>';
