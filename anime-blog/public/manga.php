@@ -1,3 +1,10 @@
+<?php
+$qur = "SELECT * FROM manga;";
+$result = $conn->query("SELECT * FROM manga");
+$res = mysqli_fetch_assoc($row);
+foreach ($result as $rows) {
+}
+?>
 <div class="blog__manga">
     <div class="manga__title"><span><?= $rows['head']; ?></span></div>
     <div class="manga__item2">
