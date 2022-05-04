@@ -19,7 +19,7 @@ session_start();
         <?php if (!empty($_SESSION['login'])) : ?>
 
             <?php echo "Добрый день, " . $_SESSION['login']; ?><br>
-            <a href="logout.php" style="margin: 10px 0px;">Выйти</a><br>
+            <a href="logout.php" style="padding: 10px 0px;">Выйти</a><br>
             <a href="new.php">New</a>
             <a href="#">Trending</a>
             <a href="manga.php">Manga</a>
