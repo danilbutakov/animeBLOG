@@ -53,9 +53,11 @@ body .btn {
   color: black;
 }
 
-.admin {
-  display: flex;
-  flex-direction: column;
+@media (max-width: 767px) {
+  .admin {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .admin input {
   margin-bottom: 15px;

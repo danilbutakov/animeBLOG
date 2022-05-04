@@ -54,8 +54,10 @@ body {
 }
 
 .admin {
-    display: flex;
-    flex-direction: column;
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
     input {
         margin-bottom: 15px;
     }
