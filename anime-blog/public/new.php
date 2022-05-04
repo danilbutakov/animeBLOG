@@ -26,7 +26,7 @@ foreach ($result as $rows) {
                         <div class="row__text"><span><?= $rows['descr']; ?></span></div>
                         <div class="row__under under">
                             <div class="under__read">
-                                <span><span><?= $rows['read_info']; ?></span></span>
+                                <span><?= $rows['read_info']; ?></span>
                             </div>
                             <div class="under__full">
                                 <a href="attack-on-titans.php"><span>Read Full <img src="img/ico/arrow.png" alt=""></span></a>
