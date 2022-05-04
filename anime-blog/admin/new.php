@@ -25,7 +25,7 @@ if (mysqli_connect_errno()) {
         <?php if (!empty($_SESSION['login'])) : ?>
 
             <div class="hello"><?php echo "Добрый день, " . $_SESSION['login']; ?><br></div>
-            <div class="logout"><a href="logout.php" style="padding: 10px 0px;">Выйти</a><br></div>
+            <div class="logout"><a href="adminauth.php" style="padding: 10px 0px;">Выйти</a><br></div>
             <?php
             $query = "SELECT * FROM new";
             $row = mysqli_query($mysqli, $query);
