@@ -25,3 +25,34 @@ body .btn {
   border-radius: 5px;
   margin-bottom: 10px;
 }
+
+.hello {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 193.3333333333%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: black;
+}
+
+.logout {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 195%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: black;
+}
+
+.section {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 193.3333333333%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: black;
+}
