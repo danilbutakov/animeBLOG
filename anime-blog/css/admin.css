@@ -27,13 +27,11 @@ body .btn {
 }
 
 .hello {
-  margin-bottom: 15px;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 193.3333333333%;
   text-align: center;
-  letter-spacing: 0.5px;
   color: black;
 }
 
@@ -43,7 +41,6 @@ body .btn {
   font-size: 40px;
   line-height: 195%;
   text-align: center;
-  letter-spacing: 0.5px;
   color: black;
 }
 
@@ -53,6 +50,5 @@ body .btn {
   font-size: 30px;
   line-height: 193.3333333333%;
   text-align: center;
-  letter-spacing: 0.5px;
   color: black;
 }
