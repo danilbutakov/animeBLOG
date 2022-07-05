@@ -67,6 +67,7 @@ require_once __DIR__ . '/php/registration.php';
         <?php require_once __DIR__ . '/public/footer.php'; ?>
     </div>
     <script src="js/popup.js"></script>
+    <script src="js/aniscroll.js"></script>
 </body>
 <script src="js/formIndex1.js"></script>
 <script src="js/formIndex2.js"></script>
