@@ -24,6 +24,9 @@ body.lock {
 .content {
     
     &__title {
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
         font-family: 'Varela';
         font-style: normal;
         font-weight: 400;
@@ -37,6 +40,10 @@ body.lock {
             text-align: center;
             margin: 0 0 20px 0;
         }
+    }
+    &__title___active {
+        opacity: 1;
+        transform: translate(0px, 0px);
     }
 
     &__text {

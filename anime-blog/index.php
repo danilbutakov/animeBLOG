@@ -37,7 +37,7 @@ require_once __DIR__ . '/php/registration.php';
             <section class="welcome">
                 <div class="welcome__content">
                     <div class="content__info">
-                        <div class="content__title">Welcome to <br> Gates</div>
+                        <div class="content__title _anim-items">Welcome to <br> Gates</div>
                         <div class="content__text">Get the latest news on your favourite mangas, anime and <br> manhwa around the world!</div>
                         <div class="content__form form">
                             <form action="" method="post" class="js-form2" novalidate>
