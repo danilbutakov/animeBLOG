@@ -1,5 +1,7 @@
 <?php
 
+include '../php/mysqlauthentication.php';
+
 $query = $mysqli->query("SELECT * FROM users");
 
 $name = filter_var(trim($_POST['name']));
