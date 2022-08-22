@@ -1,8 +1,8 @@
 <?php
 
-$name = filter_var(trim($_POST['name']));
-$email = filter_var(trim($_POST['email']));
-$pass = filter_var(trim($_POST['pass']));
+$name = filter_var(trim($_POST['name']), FILTER_SANITIZE_SPECIAL_CHARS);
+$email = filter_var(trim($_POST['email']), FILTER_SANITIZE_SPECIAL_CHARS);
+$pass = filter_var(trim($_POST['pass']), FILTER_SANITIZE_SPECIAL_CHARS);
 $pass = md5($pass);
 
 if (mb_strlen($name) < 3 || mb_strlen($name) > 50) {
