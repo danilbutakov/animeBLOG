@@ -696,14 +696,12 @@ body.lock {
 }
 
 .content__title {
-  transform: translate(0px, 120%);
-  opacity: 0;
   transition: all 0.8s ease 0s;
   font-family: 'Varela';
   font-style: normal;
   font-weight: 400;
   font-size: 85px;
-  line-height: 111.7647058824%;
+  line-height: 111 / 85 * 100%;
   color: #FFFFFF;
   padding: 300px 800px 20px 0;
 }
