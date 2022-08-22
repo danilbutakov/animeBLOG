@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/php/mysqlauthentication.php';
+require_once __DIR__ . '/php/connect.php';
 
 require_once __DIR__ . '/php/authorization.php';
 
@@ -36,7 +36,7 @@ require_once __DIR__ . '/php/registration.php';
                 <section class="sign">
                     <div class="sign__content _container-signlog">
                         <div class="content__form2">
-                            <form action="" method="post" class="js-form" novalidate>
+                            <form action="/php/authorization.php" method="post" class="js-form" enctype="multipart/form-data" novalidate>
                                 <div class="form2__item">
                                     <label for="" class="form__label">Email</label>
                                     <input type="email" name="email" class="form__input js-input js-input-email" placeholder="Enter your Email" />

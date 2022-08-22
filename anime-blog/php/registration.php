@@ -11,15 +11,4 @@ if (isset($_POST[$query])) {
     $query = "INSERT INTO `users` VALUES (null, '$name', '$email', '$pass')";
 }
 
-// if ($query != '') {
-
-// }
-
-if (mysqli_query($mysqli, $query)) {
-    //header('Location: /authorization.php');
-} else {
-    //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
-}
-
-
 $mysqli->close();

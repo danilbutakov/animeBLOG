@@ -1,15 +1,16 @@
 <?php
 
-$query = $mysqli->query('SELECT * FROM subscribe');
+$conn = mysqli_connect("localhost", "root", "", "anime-blog");
+
+if (!$conn) {
+    die('Error connect to DataBase');
+}
+
+$query = mysqli_query($conn,"SELECT * FROM `subscribe`");
 
 $emailSub = $_REQUEST['email__sub'];
 
 if (isset($query)) {
-    $query = "INSERT INTO subscribe VALUES (null, '$emailSub')";
+    $query = "INSERT INTO subscribe VALUES ('$emailSub')";
 }
 
-if (mysqli_query($mysqli, $query)) {
-    //echo "Записи успешно добавлены.";
-} else {
-    "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
-}

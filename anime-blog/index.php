@@ -1,6 +1,6 @@
 <?php
 
-include_once 'php/mysqlauthentication.php';
+include_once 'php/connect.php';
 
 require_once __DIR__ . '/php/subscribe.php';
 
@@ -40,7 +40,7 @@ require_once __DIR__ . '/php/registration.php';
                         <div class="content__title">Welcome to <br> Gates</div>
                         <div class="content__text">Get the latest news on your favourite mangas, anime and <br> manhwa around the world!</div>
                         <div class="content__form form">
-                            <form action="" method="post" class="js-form2" novalidate>
+                            <form action="php/subscribe.php" method="post" class="js-form2" novalidate>
                                 <button class="form__button" type="submit" name="submit">SUBSCRIBE</button>
                                 <input type="email" name="email__sub" class="form__input js-input2 js-input-email2" placeholder="Enter your email">
                                 <button class="form__ico" type="submit" name="submit"><img src="img/ico/Group 4.png" alt=""></button>
