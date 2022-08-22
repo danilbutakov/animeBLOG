@@ -1,7 +1,5 @@
 <?php
 
-include '../php/mysqlauthentication.php';
-
 $name = filter_var(trim($_POST['name']));
 $email = filter_var(trim($_POST['email']));
 $pass = filter_var(trim($_POST['pass']));
