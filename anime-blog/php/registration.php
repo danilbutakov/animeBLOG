@@ -1,21 +1,25 @@
 <?php
 
-$name = filter_var(trim($_POST['name']), FILTER_SANITIZE_SPECIAL_CHARS);
-$email = filter_var(trim($_POST['email']), FILTER_SANITIZE_SPECIAL_CHARS);
-$pass = filter_var(trim($_POST['pass']), FILTER_SANITIZE_SPECIAL_CHARS);
+$query = $mysqli->query("SELECT * FROM users");
+
+$name = $_REQUEST['name'];
+$email = $_REQUEST['email'];
+$pass = $_REQUEST['pass'];
 $pass = md5($pass);
 
-if (mb_strlen($name) < 3 || mb_strlen($name) > 50) {
-    //echo "Недопустимая длина имени";
-    exit();
-} else if (mb_strlen($email) < 5 || mb_strlen($email) > 50) {
-    //echo "Недопустимая длина почты";
-    exit();
-} else if (mb_strlen($pass) < 8 || mb_strlen($pass) > 100) {
-    //echo "Недопустимая длина пароля";
-    exit();
+if (isset($_POST[$query])) {
+    $query = "INSERT INTO `users` VALUES (null, '$name', '$email', '$pass')";
 }
 
-$mysqli->query("INSERT INTO `users` (`name`, `email`, `pass`) VALUES ('$name', '$email', '$pass')");
+// if ($query != '') {
+
+// }
+
+if (mysqli_query($mysqli, $query)) {
+    //header('Location: /authorization.php');
+} else {
+    //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
+}
+
 
 $mysqli->close();
