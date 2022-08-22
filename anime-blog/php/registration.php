@@ -7,9 +7,13 @@ $email = $_REQUEST['email'];
 $pass = $_REQUEST['pass'];
 $pass = md5($pass);
 
-if ($query != '') {
+if (isset($_POST[$query])) {
     $query = "INSERT INTO `users` VALUES (null, '$name', '$email', '$pass')";
 }
+
+// if ($query != '') {
+
+// }
 
 if (mysqli_query($mysqli, $query)) {
     //header('Location: /authorization.php');
