@@ -12,7 +12,7 @@ if ($query != '') {
 }
 
 if (mysqli_query($mysqli, $query)) {
-    header('Location: authorization.php');
+    header('Location: /authorization.php');
 } else {
     echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
 }
