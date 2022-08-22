@@ -2,24 +2,22 @@
 
 $query = $mysqli->query("SELECT * FROM users");
 
-$name = $_REQUEST['name'];
-$email = $_REQUEST['email'];
-$pass = $_REQUEST['pass'];
+$name = filter_var(trim($_POST['name']));
+$email = filter_var(trim($_POST['email']));
+$pass = filter_var(trim($_POST['pass']));
 $pass = md5($pass);
 
-if (isset($_POST[$query])) {
-    $query = "INSERT INTO `users` VALUES (null, '$name', '$email', '$pass')";
+if (mb_strlen($name) < 3 || mb_strlen($name) > 50) {
+    echo "Недопустимая длина имени";
+    exit();
+} else if (mb_strlen($email) < 5 || mb_strlen($email) > 50) {
+    echo "Недопустимая длина почты";
+    exit();
+} else if (mb_strlen($pass) < 8 || mb_strlen($pass) > 100) {
+    echo "Недопустимая длина пароля";
+    exit();
 }
 
-// if ($query != '') {
-
-// }
-
-if (mysqli_query($mysqli, $query)) {
-    //header('Location: /authorization.php');
-} else {
-    //echo "ERROR: Не удалось выполнить $query. " . mysqli_error($mysqli);
-}
-
+$query = "INSERT INTO `users` (`name`, `email`, `pass`) VALUES ('$name', '$email', '$pass')";
 
 $mysqli->close();
