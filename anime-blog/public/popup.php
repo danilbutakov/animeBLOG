@@ -1,7 +1,7 @@
 <section class="popup" id="pop_up">
     <div class="popup__container">
         <div class="popup__body">
-            <form action="" method="post" class="js-form1" novalidate>
+            <form action="../php/registration.php" method="post" class="js-form1" novalidate>
                 <div class="form2__item">
                     <label for="" class="form__label">Name</label>
                     <input type="text" name="name" class="form__input2 js-input1" placeholder="Enter your Name" />
