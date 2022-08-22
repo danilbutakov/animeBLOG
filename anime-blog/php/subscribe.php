@@ -4,10 +4,8 @@ $query = $mysqli->query('SELECT * FROM subscribe');
 
 $emailSub = $_REQUEST['email__sub'];
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if ($query != '') {
-        $query = "INSERT INTO subscribe VALUES (null, '$emailSub')";
-    }
+if (isset($query)) {
+    $query = "INSERT INTO subscribe VALUES (null, '$emailSub')";
 }
 
 if (mysqli_query($mysqli, $query)) {
