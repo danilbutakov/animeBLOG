@@ -1,11 +1,7 @@
 <?php
 session_start();
-$mysqli = new mysqli('localhost', 'dan', '1234', 'anime-blog');
 
-if (mysqli_connect_errno()) {
-    printf('Соединение не установлено');
-    exit();
-}
+include_once '../php/mysqlauthentication.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
