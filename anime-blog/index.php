@@ -1,10 +1,16 @@
 <?php
+session_start();
 
-include_once 'php/connect.php';
+if ($_SESSION['user']) {
+    header("Location: /");
+}
 
-require_once __DIR__ . '/php/subscribe.php';
+include_once 'vendor/connect.php';
 
-require_once __DIR__ . '/php/registration.php';
+// require_once __DIR__ . '/vendor/subscribe.php';
+
+require_once __DIR__ . '/vendor/registration.php';
+
 
 ?>
 <!DOCTYPE html>

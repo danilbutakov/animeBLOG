@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/php/connect.php';
+require_once __DIR__ . '/vendor/connect.php';
 require_once __DIR__ . '/admin/logadmin.php';
 
 ?>

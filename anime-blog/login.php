@@ -1,10 +1,13 @@
 <?php
+session_start();
 
-require_once __DIR__ . '/php/connect.php';
+if ($_SESSION['user']) {
+    header("Location: profile.php");
+}
 
-require_once __DIR__ . '/php/authorization.php';
+require_once __DIR__ . '/vendor/connect.php';
 
-require_once __DIR__ . '/php/registration.php';
+require_once __DIR__ . '/vendor/registration.php';
 
 ?>
 <!DOCTYPE html>
@@ -28,35 +31,34 @@ require_once __DIR__ . '/php/registration.php';
 
 <body>
     <div class="wrapper">
-        <?php
-        if ($_COOKIE['user'] == '') :
-        ?>
-            <?php require_once __DIR__ . '/public/header.php'; ?>
-            <main class="page">
-                <section class="sign">
-                    <div class="sign__content _container-signlog">
-                        <div class="content__form2">
-                            <form action="/php/authorization.php" method="post" class="js-form" enctype="multipart/form-data" novalidate>
-                                <div class="form2__item">
-                                    <label for="" class="form__label">Email</label>
-                                    <input type="email" name="email" class="form__input js-input js-input-email" placeholder="Enter your Email" />
-                                </div>
-                                <div class="form2__item">
-                                    <label for="" class="form__label__password">Password</label>
-                                    <input type="password" name="pass" class="form__input js-input js-input-password" placeholder="Enter your Password" />
-                                </div>
-                                <div class="form2__button">
-                                    <button type="submit" name="submit" class="button__send">Login</button>
-                                </div>
-                            </form>
-                        </div>
+        <?php require_once __DIR__ . '/public/header.php' ?>
+        <main class="page">
+            <section class="sign">
+                <div class="sign__content _container-signlog">
+                    <div class="content__form2">
+                        <form action="/php/authorization.php" method="post" class="js-form" enctype="multipart/form-data" novalidate>
+                            <div class="form2__item">
+                                <label for="" class="form__label">Email</label>
+                                <input type="email" name="email" class="form__input js-input js-input-email" placeholder="Enter your Email" />
+                            </div>
+                            <div class="form2__item">
+                                <label for="" class="form__label__password">Password</label>
+                                <input type="password" name="pass" class="form__input js-input js-input-password" placeholder="Enter your Password" />
+                            </div>
+                            <div class="form2__button">
+                                <button type="submit" name="submit" class="button__send">Login</button>
+                            </div>
+                            <?php
+                            if ($_SESSION['message']) {
+                                echo '<p class="msg">' . $_SESSION['message'] . '</p>';
+                            }
+                            unset($_SESSION['message']);
+                            ?>
+                        </form>
                     </div>
-                </section>
-            <?php else : ?>
-                <p>Привет <?= $_COOKIE['user'] ?>. Чтобы выйти нажмите <a href="php/exit.php">здесь</a></p>
-            <?php endif; ?>
-            <?php require_once __DIR__ . '/public/popup.php'; ?>
-            </main>
+                </div>
+            </section>
+        </main>
     </div>
     <script src="js/popup.js"></script>
 </body>
